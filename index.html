@@ -62,7 +62,7 @@
   	* --------------------------------------- */
   	#header, #footer{
   		position:fixed;
-  		height: 50px;
+  		height: 80px;
   		display:block;
   		width: 100%;
   		background: #333;
@@ -98,8 +98,8 @@
 <script type="text/javascript">
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b'],
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage','6thPage','lastPage'],
+    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#4BBFC3', '#1bbc9b'],
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '6thPage','lastPage'],
     menu: '#menu',
     scrollingSpeed: 1000
   });
@@ -115,7 +115,6 @@ $(document).ready(function() {
     <li data-menuanchor="secondPage"><a href="#secondPage">Empresa</a></li>
     <li data-menuanchor="3rdPage"><a href="#3rdPage">Área agrícola</a></li>
     <li data-menuanchor="4thPage"><a href="#4thPage">Área industrial</a></li>
-    <li data-menuanchor="5thPage"><a href="#5thPage">Área comercial</a></li>
     <li data-menuanchor="6thPage"><a href="#6thPage">Fitas dupla face</a></li>
     <li data-menuanchor="lastPage"><a href="#lastPage">Contato</a></li>
   </ul>
@@ -137,10 +136,7 @@ $(document).ready(function() {
     <div class="section" id="section0"> <!-- home -->
       <img src="img/aps.png" alt="APS Filtros" />
       <input type="hidden" name="id" value="1" />
-      <br>
-      <p>
-        APS Manufatura e Comércio de Filtros Ltda
-      </p>
+      <h1>APS Manufatura e Comércio de Filtros Ltda</h2>
     </div>
 
     <div class="section" id="section1"> <!-- Empresa -->
@@ -172,7 +168,7 @@ $(document).ready(function() {
           </p>
           <br>
           <p>
-            Disco Lentini: caixas com 200 unidades do tipo “APS” - marca DISLEITE - Ø=31,7 mm ou
+            Disco Lentini: caixas com 100 unidades do tipo “APS” - marca DISLEITE - Ø=31,7 mm ou
             1 ¼”. <br>
             Aplicação: filtro minit para lactofiltração do leite e análises do café solúvel, do 
             melado da cana de açúcar e outros.
@@ -253,34 +249,6 @@ $(document).ready(function() {
         </div>
       </div>
 
-    </div>
-
-    <div class="section" id="section4">   <!-- Produtos Área comercial -->
-      <div class="slide">
-        <div class="intro">
-        <!-- <img src="img/2.png" alt="Cool" /> -->
-          <h1>Produtos Área comercial</h1>
-          <p>
-            Diversas produtos e descartáveis como porta CDs e DVDs e descansos de copos entre outros
-            em TNT (tecido não tecido).
-        <br>
-            <!--foto 4 (colocar foto dos descanso de copos porta CDs costurados e outros) -->
-            <img src="img/foto06_small.jpg" alt="disleite" width="510" height="510">
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="intro">
-          <!-- <img src="img/2.png" alt="Cool" /> -->
-          <h1>Produtos Área comercial</h1>
-          <p>
-            Diversas produtos e descartáveis como porta CDs / DVDs / BDs e descanso de copos entre outros
-            em TNT (tecido não tecido);
-          <br>
-          <!--foto 4 (colocar foto dos descanso de copos porta CDs costurados e outros) -->
-          <img src="img/foto07_small.jpg" alt="disleite" width="510" height="510">
-        </div>
-      </div>
     </div>
 
     <!-- Produtos Fitas dupla face -->
