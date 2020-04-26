@@ -9,6 +9,14 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 a{
 	text-decoration:none;
 }
+a.footer {
+	text-decoration:none;
+	color:white;
+}
+a.contato {
+	text-decoration:none;
+	color: rgba(0,0,0,0.5);
+}
 table {
     border-spacing: 0;
 }
