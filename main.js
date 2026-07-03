@@ -245,4 +245,62 @@
 
   // Expose i18n for external use
   window.apsI18n = i18n;
+
+  // ==========================================================================
+  // Scroll Animations (fade-in on scroll)
+  // ==========================================================================
+
+  const animateElements = document.querySelectorAll(
+    ".product-card, .product-cards-grid, .gallery-item, .text-block, .contact-layout, .section-subtitle"
+  );
+
+  // Add fade-in class and stagger index for gallery items
+  animateElements.forEach((el) => {
+    el.classList.add("fade-in");
+    if (el.classList.contains("gallery-item")) {
+      const gallery = el.closest(".gallery");
+      const items = Array.from(gallery.querySelectorAll(".gallery-item"));
+      el.style.setProperty("--item-index", items.indexOf(el));
+    }
+  });
+
+  // Respect reduced motion preference
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!prefersReducedMotion) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    animateElements.forEach((el) => observer.observe(el));
+  } else {
+    // If reduced motion, just show everything
+    animateElements.forEach((el) => el.classList.add("visible"));
+  }
+
+  // ==========================================================================
+  // Back to Top Button
+  // ==========================================================================
+
+  const backToTop = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTop.classList.add("visible");
+    } else {
+      backToTop.classList.remove("visible");
+    }
+  }, { passive: true });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 })();
