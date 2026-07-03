@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Home",
+    "empresa": "Company",
+    "agricola": "Agricultural",
+    "industrial": "Industrial",
+    "fitas": "Double-Sided Tape",
+    "contato": "Contact"
+  },
+  "hero": {
+    "title": "APS Filter Manufacturing and Trading Ltd",
+    "subtitle": "Manufacturing quality filter elements since 1981"
+  },
+  "empresa": {
+    "title": "Company",
+    "text": "APS Filtros was established in 1981, initially to manufacture and market \"membrane-type\" filter elements for the agricultural sector (milk processing control - laboratory / lactofiltration / soluble coffee and sugarcane molasses analysis), paints and varnishes (in press filter / sparkler equipment), later expanding to serve other disposable product segments as well as distribution of double-sided cotton tape."
+  },
+  "agricola": {
+    "title": "Products - Agricultural",
+    "subtitle": "Dairy chain and laboratory analysis",
+    "disleite": {
+      "title": "Lentini Disc - Disleite",
+      "desc": "Discs for milk analysis, soluble coffee or other liquids. Boxes with 100 units of \"APS\" type - DISLEITE brand - Ø=31.7 mm or 1 ¼\". Application: minit filter for milk lactofiltration and analysis of soluble coffee, sugarcane molasses and others."
+    },
+    "camisas": {
+      "title": "Filter Sleeves",
+      "desc": "Sleeve-type filters, sewn. Boxes or packages with 100 pieces in various dimensions. Application: mechanical milking machines and others."
+    }
+  },
+  "industrial": {
+    "title": "Products - Industrial",
+    "subtitle": "Filtration for paint, varnish, and vegetable oil industries",
+    "resinas": {
+      "title": "Resin Clarification",
+      "desc": "Paint industry chain for resin clarification, used in sparkler-type filters."
+    },
+    "membranas": {
+      "title": "Circular Filter Membranes",
+      "desc": "Filter paper or non-woven fabric (industrial filters). Boxes and/or packages with 100 pieces, used in sparkler or press-type filters. Application: filtration of resins and varnishes in paint and varnish industries and/or filtration and clarification of liquids in vegetable oil industries and others."
+    }
+  },
+  "fitas": {
+    "title": "Double-Sided Tape",
+    "desc": "Distribution of yellow cotton double-sided \"strong\" tape, various sizes available upon request, with 30.00 m length for diverse applications such as hair extensions."
+  },
+  "contato": {
+    "title": "Contact",
+    "email_label": "Email:",
+    "phone_label": "Phone:",
+    "fax_label": "Fax:",
+    "address_label": "Address:"
+  }
+}

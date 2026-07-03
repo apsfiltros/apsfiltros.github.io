@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Home",
+    "empresa": "Empresa",
+    "agricola": "Área Agrícola",
+    "industrial": "Área Industrial",
+    "fitas": "Fitas Dupla Face",
+    "contato": "Contato"
+  },
+  "hero": {
+    "title": "APS Manufatura e Comércio de Filtros Ltda",
+    "subtitle": "Desde 1981 fabricando elementos filtrantes de qualidade"
+  },
+  "empresa": {
+    "title": "Empresa",
+    "text": "A APS Filtros foi constituída em 1981, inicialmente para atuar na manufatura e comercialização de elementos filtrantes \"tipo membranas\" nos segmentos agropecuário (controle do beneficiamento do leite-laboratório / lactofiltração / análise do café solúvel e do melado do caldo da cana de açúcar), de tintas e vernizes (nos equipamentos tipo filtros prensa / sparkler), passando posteriormente a atender outros segmentos de produtos descartáveis bem como na distribuição de fitas dupla face de algodão."
+  },
+  "agricola": {
+    "title": "Produtos - Área Agrícola",
+    "subtitle": "Cadeia do leite e análises laboratoriais",
+    "disleite": {
+      "title": "Disco Lentini - Disleite",
+      "desc": "Discos para análise do leite, café solúvel ou outros líquidos. Caixas com 100 unidades do tipo \"APS\" - marca DISLEITE - Ø=31,7 mm ou 1 ¼\". Aplicação: filtro minit para lactofiltração do leite e análises do café solúvel, do melado da cana de açúcar e outros."
+    },
+    "camisas": {
+      "title": "Camisas de Filtro",
+      "desc": "Camisas de filtro tipo manga, costurados. Caixas ou pacotes com 100 peças em diversas dimensões. Aplicação: ordenhadeiras mecânicas e outros."
+    }
+  },
+  "industrial": {
+    "title": "Produtos - Área Industrial",
+    "subtitle": "Filtração para indústria de tintas, vernizes e óleos vegetais",
+    "resinas": {
+      "title": "Clarificação de Resinas",
+      "desc": "Cadeia da indústria de tintas para clarificação de resinas, utilizados no filtro tipo sparkler."
+    },
+    "membranas": {
+      "title": "Membranas Filtrantes Circulares",
+      "desc": "Papel filtro ou TNT (filtros industriais). Caixas e/ou pacotes com 100 peças, utilizados no filtro sparkler ou filtro tipo prensa. Aplicação: filtração de resinas e vernizes nas indústrias de tintas e vernizes e/ou filtração e clarificação de líquidos nas indústrias de óleos vegetais e outros."
+    }
+  },
+  "fitas": {
+    "title": "Fitas Dupla Face",
+    "desc": "Distribuição de fitas de algodão amarela tipo dupla face \"forte\", medidas diversas sob consulta com 30,00 m de extensão para diversas aplicações como mega-hair."
+  },
+  "contato": {
+    "title": "Contato",
+    "email_label": "Email:",
+    "phone_label": "Telefone:",
+    "fax_label": "Fax:",
+    "address_label": "Endereço:"
+  }
+}

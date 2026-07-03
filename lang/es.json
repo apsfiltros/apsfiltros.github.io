@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "empresa": "Empresa",
+    "agricola": "Agrícola",
+    "industrial": "Industrial",
+    "fitas": "Cintas Doble Faz",
+    "contato": "Contacto"
+  },
+  "hero": {
+    "title": "APS Manufactura y Comercio de Filtros Ltda",
+    "subtitle": "Fabricando elementos filtrantes de calidad desde 1981"
+  },
+  "empresa": {
+    "title": "Empresa",
+    "text": "APS Filtros fue constituida en 1981, inicialmente para actuar en la manufactura y comercialización de elementos filtrantes \"tipo membranas\" en los segmentos agropecuario (control del procesamiento de la leche - laboratorio / lactofiltración / análisis del café soluble y de la melaza de caña de azúcar), de pinturas y barnices (en equipos tipo filtros prensa / sparkler), pasando posteriormente a atender otros segmentos de productos desechables así como la distribución de cintas doble faz de algodón."
+  },
+  "agricola": {
+    "title": "Productos - Área Agrícola",
+    "subtitle": "Cadena láctea y análisis de laboratorio",
+    "disleite": {
+      "title": "Disco Lentini - Disleite",
+      "desc": "Discos para análisis de leche, café soluble u otros líquidos. Cajas con 100 unidades del tipo \"APS\" - marca DISLEITE - Ø=31,7 mm o 1 ¼\". Aplicación: filtro minit para lactofiltración de la leche y análisis del café soluble, de la melaza de caña de azúcar y otros."
+    },
+    "camisas": {
+      "title": "Camisas de Filtro",
+      "desc": "Filtros tipo manga, cosidos. Cajas o paquetes con 100 piezas en diversas dimensiones. Aplicación: ordeñadoras mecánicas y otros."
+    }
+  },
+  "industrial": {
+    "title": "Productos - Área Industrial",
+    "subtitle": "Filtración para la industria de pinturas, barnices y aceites vegetales",
+    "resinas": {
+      "title": "Clarificación de Resinas",
+      "desc": "Cadena de la industria de pinturas para clarificación de resinas, utilizados en filtros tipo sparkler."
+    },
+    "membranas": {
+      "title": "Membranas Filtrantes Circulares",
+      "desc": "Papel filtro o tela no tejida (filtros industriales). Cajas y/o paquetes con 100 piezas, utilizados en filtros sparkler o tipo prensa. Aplicación: filtración de resinas y barnices en las industrias de pinturas y barnices y/o filtración y clarificación de líquidos en las industrias de aceites vegetales y otros."
+    }
+  },
+  "fitas": {
+    "title": "Cintas Doble Faz",
+    "desc": "Distribución de cintas de algodón amarilla tipo doble faz \"fuerte\", medidas diversas bajo consulta con 30,00 m de extensión para diversas aplicaciones como extensiones de cabello."
+  },
+  "contato": {
+    "title": "Contacto",
+    "email_label": "Email:",
+    "phone_label": "Teléfono:",
+    "fax_label": "Fax:",
+    "address_label": "Dirección:"
+  }
+}

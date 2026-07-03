@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "empresa": "Công ty",
+    "agricola": "Nông nghiệp",
+    "industrial": "Công nghiệp",
+    "fitas": "Băng keo hai mặt",
+    "contato": "Liên hệ"
+  },
+  "hero": {
+    "title": "APS Sản xuất và Thương mại Bộ lọc Ltda",
+    "subtitle": "Sản xuất các phần tử lọc chất lượng từ năm 1981"
+  },
+  "empresa": {
+    "title": "Công ty",
+    "text": "APS Filtros được thành lập vào năm 1981, ban đầu hoạt động trong lĩnh vực sản xuất và thương mại các phần tử lọc \"loại màng\" cho ngành nông nghiệp (kiểm soát chế biến sữa - phòng thí nghiệm / lọc sữa / phân tích cà phê hòa tan và mật mía), sơn và vecni (trong thiết bị lọc ép / sparkler), sau đó mở rộng sang các phân khúc sản phẩm dùng một lần khác cũng như phân phối băng keo hai mặt bằng cotton."
+  },
+  "agricola": {
+    "title": "Sản phẩm - Nông nghiệp",
+    "subtitle": "Chuỗi sữa và phân tích phòng thí nghiệm",
+    "disleite": {
+      "title": "Đĩa Lentini - Disleite",
+      "desc": "Đĩa phân tích sữa, cà phê hòa tan hoặc các chất lỏng khác. Hộp 100 đơn vị loại \"APS\" - thương hiệu DISLEITE - Ø=31,7 mm hoặc 1 ¼\". Ứng dụng: bộ lọc minit cho lọc sữa và phân tích cà phê hòa tan, mật mía và các loại khác."
+    },
+    "camisas": {
+      "title": "Ống lọc",
+      "desc": "Bộ lọc loại ống, may. Hộp hoặc gói 100 chiếc với nhiều kích thước khác nhau. Ứng dụng: máy vắt sữa cơ học và các ứng dụng khác."
+    }
+  },
+  "industrial": {
+    "title": "Sản phẩm - Công nghiệp",
+    "subtitle": "Lọc cho ngành sơn, vecni và dầu thực vật",
+    "resinas": {
+      "title": "Làm trong nhựa",
+      "desc": "Chuỗi công nghiệp sơn để làm trong nhựa, sử dụng trong bộ lọc loại sparkler."
+    },
+    "membranas": {
+      "title": "Màng lọc tròn",
+      "desc": "Giấy lọc hoặc vải không dệt (bộ lọc công nghiệp). Hộp và/hoặc gói 100 chiếc, sử dụng trong bộ lọc sparkler hoặc loại ép. Ứng dụng: lọc nhựa và vecni trong ngành sơn và vecni và/hoặc lọc và làm trong chất lỏng trong ngành dầu thực vật và các ngành khác."
+    }
+  },
+  "fitas": {
+    "title": "Băng keo hai mặt",
+    "desc": "Phân phối băng keo hai mặt cotton vàng loại \"mạnh\", nhiều kích thước theo yêu cầu với chiều dài 30,00 m cho các ứng dụng đa dạng như nối tóc."
+  },
+  "contato": {
+    "title": "Liên hệ",
+    "email_label": "Email:",
+    "phone_label": "Điện thoại:",
+    "fax_label": "Fax:",
+    "address_label": "Địa chỉ:"
+  }
+}
