@@ -222,6 +222,16 @@
       // localStorage not available
     }
 
+    // If no saved preference, detect browser language
+    if (!savedLang) {
+      const browserLang = navigator.language || navigator.userLanguage || "pt-BR";
+      const supported = ["pt-BR", "en", "es", "fr", "vi", "zh"];
+      // Try exact match first, then prefix match
+      savedLang = supported.find(l => l === browserLang)
+        || supported.find(l => browserLang.startsWith(l.split("-")[0]))
+        || null;
+    }
+
     if (savedLang && savedLang !== "pt-BR") {
       const loaded = await i18n.loadLanguage(savedLang);
       if (loaded) {
