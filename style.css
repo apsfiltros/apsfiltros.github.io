@@ -9,11 +9,12 @@
   --color-primary-dark: #134429;
   --color-primary-light: #2d8a5e;
   --color-bg: #ffffff;
-  --color-bg-alt: #f0f7f3;
+  --color-bg-alt: #f5f9f6;
   --color-text: #1a1a1a;
-  --color-text-light: #4a4a4a;
-  --color-border: #e0e8e3;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-text-light: #3d4a42;
+  --color-border: #d4e0d8;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --max-width: 1100px;
   --nav-height: 60px;
   --transition: 0.3s ease;
@@ -32,7 +33,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-body);
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
@@ -243,8 +244,9 @@ a:hover {
 }
 
 .section h2 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 400;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   text-align: center;
@@ -276,8 +278,9 @@ a:hover {
 }
 
 .section-hero h1 {
+  font-family: var(--font-display);
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   margin-bottom: 0.75rem;
 }
@@ -324,9 +327,10 @@ a:hover {
 
 /* Product Cards */
 .product-card {
-  background: var(--color-bg);
+  background: var(--color-bg-alt);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-left: 3px solid var(--color-primary);
+  border-radius: 4px;
   padding: 1.5rem;
   margin-bottom: 1rem;
   max-width: 750px;
@@ -336,11 +340,13 @@ a:hover {
 
 .section-alt .product-card {
   background: #ffffff;
+  border-left: 3px solid var(--color-primary-light);
 }
 
 .product-card h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
