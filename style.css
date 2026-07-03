@@ -266,7 +266,6 @@ a:hover {
 
 .hero-logo {
   margin: 0 auto 2rem;
-  filter: brightness(0) invert(1);
   width: 200px;
   height: auto;
 }
