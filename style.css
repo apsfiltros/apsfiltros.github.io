@@ -90,7 +90,9 @@ a:hover {
 .nav-logo img {
   height: 36px;
   width: auto;
-  filter: brightness(0) invert(1);
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+  padding: 2px;
 }
 
 .nav-menu {
@@ -268,6 +270,9 @@ a:hover {
   margin: 0 auto 2rem;
   width: 200px;
   height: auto;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 8px;
 }
 
 .section-hero h1 {
