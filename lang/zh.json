@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "首页",
+    "empresa": "公司",
+    "agricola": "农业",
+    "industrial": "工业",
+    "fitas": "双面胶带",
+    "contato": "联系我们"
+  },
+  "hero": {
+    "title": "APS Manufatura e Comércio de Filtros Ltda",
+    "subtitle": "自1981年以来制造优质过滤元件"
+  },
+  "empresa": {
+    "title": "公司",
+    "text": "APS Filtros成立于1981年，最初从事农业领域（牛奶加工控制 - 实验室/乳过滤/可溶咖啡和甘蔗糖蜜分析）、油漆和清漆（压滤机/sparkler型设备）的\"膜型\"过滤元件的制造和销售，随后扩展到其他一次性产品领域以及棉质双面胶带的分销。"
+  },
+  "agricola": {
+    "title": "产品 - 农业领域",
+    "subtitle": "乳品产业链和实验室分析",
+    "disleite": {
+      "title": "Lentini圆片 - Disleite",
+      "desc": "用于牛奶、可溶咖啡或其他液体分析的圆片。每盒100片\"APS\"型 - DISLEITE品牌 - Ø=31.7毫米或1¼英寸。应用：用于牛奶乳过滤和可溶咖啡、甘蔗糖蜜等分析的minit过滤器。"
+    },
+    "camisas": {
+      "title": "滤袋",
+      "desc": "袋式过滤器，缝制。每盒或每包100片，多种尺寸。应用：机械挤奶机及其他。"
+    }
+  },
+  "industrial": {
+    "title": "产品 - 工业领域",
+    "subtitle": "油漆、清漆和植物油行业的过滤",
+    "resinas": {
+      "title": "树脂澄清",
+      "desc": "油漆行业树脂澄清产业链，用于sparkler型过滤器。"
+    },
+    "membranas": {
+      "title": "圆形过滤膜",
+      "desc": "滤纸或无纺布（工业过滤器）。每盒和/或每包100片，用于sparkler或压滤型过滤器。应用：油漆和清漆行业的树脂和清漆过滤和/或植物油行业等的液体过滤和澄清。"
+    }
+  },
+  "fitas": {
+    "title": "双面胶带",
+    "desc": "分销黄色棉质双面\"强力\"胶带，多种尺寸可咨询，长度30.00米，适用于多种应用如接发等。"
+  },
+  "contato": {
+    "title": "联系我们",
+    "email_label": "电子邮件：",
+    "phone_label": "电话：",
+    "fax_label": "传真：",
+    "address_label": "地址："
+  }
+}

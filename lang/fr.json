@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "empresa": "Entreprise",
+    "agricola": "Agricole",
+    "industrial": "Industriel",
+    "fitas": "Ruban Double Face",
+    "contato": "Contact"
+  },
+  "hero": {
+    "title": "APS Manufatura e Comércio de Filtros Ltda",
+    "subtitle": "Fabrication d'éléments filtrants de qualité depuis 1981"
+  },
+  "empresa": {
+    "title": "Entreprise",
+    "text": "APS Filtros a été fondée en 1981, initialement pour fabriquer et commercialiser des éléments filtrants de \"type membrane\" pour le secteur agricole (contrôle du traitement du lait - laboratoire / lactofiltration / analyse du café soluble et de la mélasse de canne à sucre), des peintures et vernis (dans les équipements de filtre presse / sparkler), s'étendant par la suite à d'autres segments de produits jetables ainsi qu'à la distribution de ruban adhésif double face en coton."
+  },
+  "agricola": {
+    "title": "Produits - Secteur Agricole",
+    "subtitle": "Chaîne laitière et analyses en laboratoire",
+    "disleite": {
+      "title": "Disque Lentini - Disleite",
+      "desc": "Disques pour l'analyse du lait, du café soluble ou d'autres liquides. Boîtes de 100 unités de type \"APS\" - marque DISLEITE - Ø=31,7 mm ou 1 ¼\". Application : filtre minit pour la lactofiltration du lait et l'analyse du café soluble, de la mélasse de canne à sucre et autres."
+    },
+    "camisas": {
+      "title": "Manchons Filtrants",
+      "desc": "Filtres type manchon, cousus. Boîtes ou paquets de 100 pièces en dimensions diverses. Application : trayeuses mécaniques et autres."
+    }
+  },
+  "industrial": {
+    "title": "Produits - Secteur Industriel",
+    "subtitle": "Filtration pour l'industrie des peintures, vernis et huiles végétales",
+    "resinas": {
+      "title": "Clarification de Résines",
+      "desc": "Chaîne de l'industrie des peintures pour la clarification des résines, utilisés dans les filtres de type sparkler."
+    },
+    "membranas": {
+      "title": "Membranes Filtrantes Circulaires",
+      "desc": "Papier filtre ou tissu non tissé (filtres industriels). Boîtes et/ou paquets de 100 pièces, utilisés dans les filtres sparkler ou de type presse. Application : filtration de résines et vernis dans les industries de peintures et vernis et/ou filtration et clarification de liquides dans les industries d'huiles végétales et autres."
+    }
+  },
+  "fitas": {
+    "title": "Ruban Double Face",
+    "desc": "Distribution de ruban double face en coton jaune de type \"fort\", dimensions diverses sur consultation avec 30,00 m de longueur pour diverses applications comme les extensions de cheveux."
+  },
+  "contato": {
+    "title": "Contact",
+    "email_label": "Email :",
+    "phone_label": "Téléphone :",
+    "fax_label": "Fax :",
+    "address_label": "Adresse :"
+  }
+}
