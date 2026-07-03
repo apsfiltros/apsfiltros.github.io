@@ -240,7 +240,7 @@ a:hover {
 }
 
 .section-alt {
-  background: var(--color-bg-alt);
+  background: var(--color-bg);
 }
 
 .section h2 {
@@ -339,7 +339,7 @@ a:hover {
 }
 
 .section-alt .product-card {
-  background: #ffffff;
+  background: var(--color-bg-alt);
   border-left: 3px solid var(--color-primary-light);
 }
 
