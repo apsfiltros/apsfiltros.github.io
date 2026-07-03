@@ -238,6 +238,8 @@ a:hover {
 .section {
   padding: 5rem 0;
   border-bottom: 1px solid var(--color-border);
+  background-image: radial-gradient(circle, var(--color-border) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
 }
 
 .section:last-of-type {
