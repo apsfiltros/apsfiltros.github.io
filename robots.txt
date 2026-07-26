@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /img/original/
 
 Sitemap: https://www.apsfiltros.com.br/sitemap.xml
