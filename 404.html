@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Página não encontrada — APS Filtros</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1.2px, transparent 1.2px),
+        radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.08) 0%, transparent 70%),
+        linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+      background-size: 28px 28px, auto, auto;
+      color: #ffffff;
+      padding: 2rem 1.5rem;
+    }
+    .error-logo {
+      background: #ffffff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      width: 180px;
+      height: auto;
+      margin: 0 auto 2rem;
+      display: block;
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(4rem, 16vw, 6.5rem);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .error-title {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+    .error-text {
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 32rem;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+    .error-back {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.75rem;
+      background: #ffffff;
+      color: var(--color-primary-dark);
+      border-radius: 4px;
+      font-weight: 600;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .error-back:hover {
+      transform: translateY(-2px);
+      color: var(--color-primary-dark);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <div>
+      <img src="img/aps.svg" alt="APS Filtros" class="error-logo" width="180" height="62">
+      <p class="error-code">404</p>
+      <h1 class="error-title">Página não encontrada</h1>
+      <p class="error-text">
+        A página que você procura não existe ou foi movida. Confira o endereço
+        digitado ou volte para a página inicial.
+      </p>
+      <a href="/" class="error-back">Voltar para o início</a>
+    </div>
+  </main>
+</body>
+</html>
