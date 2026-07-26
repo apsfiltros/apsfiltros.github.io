@@ -1,4 +1,18 @@
 {
+  "meta": {
+    "title": "APS Filtros — 过滤元件、滤膜与滤片，始于1981年",
+    "description": "APS Filtros 自1981年起制造和销售过滤元件、滤膜、Disleite滤片和双面胶带。位于巴西圣保罗州桑托斯。",
+    "og_title": "APS Filtros — 过滤元件，始于1981年",
+    "og_description": "过滤元件、滤膜、Disleite滤片和双面胶带，始于1981年。巴西桑托斯。"
+  },
+  "ui": {
+    "open_menu": "打开菜单",
+    "lightbox_label": "图片查看器",
+    "lightbox_close": "关闭",
+    "lightbox_prev": "上一张",
+    "lightbox_next": "下一张",
+    "back_to_top": "返回顶部"
+  },
   "nav": {
     "home": "首页",
     "empresa": "公司",

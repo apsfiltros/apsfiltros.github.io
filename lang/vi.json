@@ -1,4 +1,18 @@
 {
+  "meta": {
+    "title": "APS Filtros — Phần Tử Lọc, Màng Lọc và Đĩa Lọc Từ Năm 1981",
+    "description": "APS Filtros sản xuất và phân phối phần tử lọc, màng lọc, đĩa lọc Disleite và băng keo hai mặt từ năm 1981. Santos, SP, Brazil.",
+    "og_title": "APS Filtros — Phần Tử Lọc Từ Năm 1981",
+    "og_description": "Phần tử lọc, màng lọc, đĩa lọc Disleite và băng keo hai mặt từ năm 1981. Santos, SP, Brazil."
+  },
+  "ui": {
+    "open_menu": "Mở menu",
+    "lightbox_label": "Trình xem hình ảnh",
+    "lightbox_close": "Đóng",
+    "lightbox_prev": "Trước",
+    "lightbox_next": "Tiếp theo",
+    "back_to_top": "Lên đầu trang"
+  },
   "nav": {
     "home": "Trang chủ",
     "empresa": "Công ty",

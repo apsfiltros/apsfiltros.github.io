@@ -1,4 +1,18 @@
 {
+  "meta": {
+    "title": "APS Filtros — Filter Elements, Membranes & Filter Discs Since 1981",
+    "description": "APS Filtros manufactures and distributes filter elements, membranes, Disleite filter discs and double-sided tape since 1981. Santos, SP, Brazil.",
+    "og_title": "APS Filtros — Filter Elements & Membranes Since 1981",
+    "og_description": "Filter elements, membranes, Disleite filter discs and double-sided tape since 1981. Santos, SP, Brazil."
+  },
+  "ui": {
+    "open_menu": "Open menu",
+    "lightbox_label": "Image viewer",
+    "lightbox_close": "Close",
+    "lightbox_prev": "Previous",
+    "lightbox_next": "Next",
+    "back_to_top": "Back to top"
+  },
   "nav": {
     "home": "Home",
     "empresa": "Company",
