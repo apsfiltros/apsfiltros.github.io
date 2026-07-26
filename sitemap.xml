@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.apsfiltros.com.br/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.apsfiltros.com.br/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.apsfiltros.com.br/en/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.apsfiltros.com.br/es/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://www.apsfiltros.com.br/fr/"/>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://www.apsfiltros.com.br/vi/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.apsfiltros.com.br/zh/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apsfiltros.com.br/"/>
+  </url>
+  <url>
+    <loc>https://www.apsfiltros.com.br/en/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.apsfiltros.com.br/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.apsfiltros.com.br/en/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.apsfiltros.com.br/es/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://www.apsfiltros.com.br/fr/"/>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://www.apsfiltros.com.br/vi/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.apsfiltros.com.br/zh/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apsfiltros.com.br/"/>
+  </url>
+  <url>
+    <loc>https://www.apsfiltros.com.br/es/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.apsfiltros.com.br/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.apsfiltros.com.br/en/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.apsfiltros.com.br/es/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://www.apsfiltros.com.br/fr/"/>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://www.apsfiltros.com.br/vi/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.apsfiltros.com.br/zh/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apsfiltros.com.br/"/>
+  </url>
+  <url>
+    <loc>https://www.apsfiltros.com.br/fr/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.apsfiltros.com.br/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.apsfiltros.com.br/en/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.apsfiltros.com.br/es/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://www.apsfiltros.com.br/fr/"/>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://www.apsfiltros.com.br/vi/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.apsfiltros.com.br/zh/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apsfiltros.com.br/"/>
+  </url>
+  <url>
+    <loc>https://www.apsfiltros.com.br/vi/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.apsfiltros.com.br/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.apsfiltros.com.br/en/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.apsfiltros.com.br/es/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://www.apsfiltros.com.br/fr/"/>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://www.apsfiltros.com.br/vi/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.apsfiltros.com.br/zh/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apsfiltros.com.br/"/>
+  </url>
+  <url>
+    <loc>https://www.apsfiltros.com.br/zh/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.apsfiltros.com.br/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.apsfiltros.com.br/en/"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.apsfiltros.com.br/es/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="https://www.apsfiltros.com.br/fr/"/>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://www.apsfiltros.com.br/vi/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.apsfiltros.com.br/zh/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apsfiltros.com.br/"/>
   </url>
 </urlset>

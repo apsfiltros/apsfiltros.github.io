@@ -129,9 +129,11 @@ a:hover {
 /* Language Switcher */
 .lang-switcher {
   margin-left: 0.5rem;
+  position: relative;
 }
 
-.lang-switcher select {
+.lang-switcher summary {
+  list-style: none;
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -140,14 +142,48 @@ a:hover {
   font-size: 0.85rem;
   cursor: pointer;
   font-weight: 500;
+  white-space: nowrap;
+  transition: background var(--transition);
 }
 
-.lang-switcher select:hover {
+.lang-switcher summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang-switcher summary::marker {
+  content: "";
+}
+
+.lang-switcher summary:hover,
+.lang-switcher[open] summary {
   background: rgba(255, 255, 255, 0.25);
 }
 
-.lang-switcher select option {
+.lang-switcher ul {
+  list-style: none;
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
   background: var(--color-primary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  padding: 0.35rem 0;
+  z-index: 10;
+}
+
+.lang-switcher ul a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.lang-switcher ul a:hover,
+.lang-switcher ul a.current {
+  background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
 }
 
@@ -228,6 +264,22 @@ a:hover {
     display: block;
     padding: 0.75rem 1rem;
     font-size: 1rem;
+  }
+
+  .lang-switcher {
+    margin-left: 0;
+  }
+
+  .lang-switcher summary {
+    width: fit-content;
+  }
+
+  .lang-switcher ul {
+    position: static;
+    margin-top: 0.5rem;
+    box-shadow: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.15);
   }
 }
 

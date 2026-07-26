@@ -1,4 +1,18 @@
 {
+  "meta": {
+    "title": "APS Filtros — Elementos Filtrantes, Membranas y Discos Filtrantes Desde 1981",
+    "description": "APS Filtros fabrica y distribuye elementos filtrantes, membranas, discos filtrantes Disleite y cintas de doble cara desde 1981. Santos, SP, Brasil.",
+    "og_title": "APS Filtros — Elementos Filtrantes Desde 1981",
+    "og_description": "Elementos filtrantes, membranas, discos filtrantes Disleite y cintas de doble cara desde 1981. Santos, SP, Brasil."
+  },
+  "ui": {
+    "open_menu": "Abrir menú",
+    "lightbox_label": "Visor de imágenes",
+    "lightbox_close": "Cerrar",
+    "lightbox_prev": "Anterior",
+    "lightbox_next": "Siguiente",
+    "back_to_top": "Volver arriba"
+  },
   "nav": {
     "home": "Inicio",
     "empresa": "Empresa",

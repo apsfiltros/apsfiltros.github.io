@@ -1,4 +1,18 @@
 {
+  "meta": {
+    "title": "APS Manufatura e Comércio de Filtros",
+    "description": "APS Filtros - Manufatura e comércio de elementos filtrantes, membranas, discos Disleite e fitas dupla face desde 1981.",
+    "og_title": "APS Manufatura e Comércio de Filtros",
+    "og_description": "Elementos filtrantes, membranas, discos Disleite e fitas dupla face desde 1981. Santos, SP, Brasil."
+  },
+  "ui": {
+    "open_menu": "Abrir menu",
+    "lightbox_label": "Visualizador de imagens",
+    "lightbox_close": "Fechar",
+    "lightbox_prev": "Anterior",
+    "lightbox_next": "Próxima",
+    "back_to_top": "Voltar ao topo"
+  },
   "nav": {
     "home": "Início",
     "empresa": "Empresa",
