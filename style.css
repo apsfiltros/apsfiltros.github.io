@@ -7,7 +7,7 @@
 :root {
   --color-primary: #1a5c38;
   --color-primary-dark: #134429;
-  --color-primary-light: #2d8a5e;
+  --color-primary-light: #27754e;
   --color-bg: #ffffff;
   --color-bg-alt: #f5f9f6;
   --color-text: #1a1a1a;
@@ -53,6 +53,24 @@ a {
 
 a:hover {
   color: var(--color-primary-light);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--color-primary-dark);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  z-index: 3000;
+  border-radius: 0 0 4px 0;
+  font-weight: 600;
+  transition: top var(--transition);
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 /* Container */
@@ -120,6 +138,10 @@ a:hover {
 /* Hamburger */
 .nav-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   background: none;
   border: none;
   cursor: pointer;
@@ -235,7 +257,7 @@ a:hover {
 /* Mobile nav */
 @media (max-width: 768px) {
   .nav-toggle {
-    display: block;
+    display: flex;
   }
 
   .nav-menu {
@@ -482,6 +504,24 @@ a:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
+.gallery-trigger {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.gallery-trigger picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .gallery-item img {
   width: 100%;
   height: 100%;
@@ -599,6 +639,32 @@ a:hover {
 .contact-info {
   max-width: 600px;
   margin: 2rem auto 0;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.whatsapp-button:hover {
+  background: var(--color-primary-light);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.whatsapp-button svg {
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
@@ -744,6 +810,14 @@ a:hover {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Never let printing depend on JS having run the reveal animation */
+@media print {
+  .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 /* Stagger gallery items */

@@ -13,6 +13,9 @@
     "lightbox_next": "Próxima",
     "back_to_top": "Voltar ao topo"
   },
+  "a11y": {
+    "skip_to_content": "Pular para o conteúdo"
+  },
   "nav": {
     "home": "Início",
     "empresa": "Empresa",
@@ -62,6 +65,7 @@
     "email_label": "Email:",
     "phone_label": "Telefone:",
     "fax_label": "Fax:",
-    "address_label": "Endereço:"
+    "address_label": "Endereço:",
+    "whatsapp_cta": "Falar no WhatsApp"
   }
 }
