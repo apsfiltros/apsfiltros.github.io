@@ -1,0 +1,12 @@
+{
+  "name": "apsfiltros-github-io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "optimize-images": "node optimize-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}
