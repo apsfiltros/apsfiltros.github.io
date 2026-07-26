@@ -1,0 +1,5 @@
+# Archived full-resolution source photos — kept in the repo as backups,
+# never meant to be publicly served. Block them with a real 404 rather
+# than relying on nothing linking there (Cloudflare Pages serves every
+# file in the repo by default; a bare git history isn't enough).
+/img/original/*  /404.html  404
