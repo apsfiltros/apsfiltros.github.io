@@ -58,12 +58,20 @@ for (const file of SOURCES) {
     const outJpeg = join(IMG_DIR, `${name}${size.suffix}.jpg`);
     const outWebp = join(IMG_DIR, `${name}${size.suffix}.webp`);
 
+    // .rotate() with no args auto-orients from EXIF before resizing,
+    // then strips the tag (pixels are now physically correct) — without
+    // it, sharp resizes the raw sensor-orientation pixel grid as-is,
+    // which comes out sideways for any photo with a non-1 EXIF
+    // Orientation tag (phone/camera photos routinely have one; the
+    // fita_dupla_face photos all do, at orientation 6).
     const info = await sharp(archivePath)
+      .rotate()
       .resize({ width: size.maxWidth, withoutEnlargement: true })
       .jpeg({ quality: size.jpegQuality, progressive: true, mozjpeg: true })
       .toFile(outJpeg);
 
     await sharp(archivePath)
+      .rotate()
       .resize({ width: size.maxWidth, withoutEnlargement: true })
       .webp({ quality: size.webpQuality, effort: 6 })
       .toFile(outWebp);
