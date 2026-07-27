@@ -64,6 +64,8 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
   <!-- Navigation -->
   <header class="site-header" id="site-header">
     <nav class="nav-container">
@@ -97,7 +99,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
 
     <!-- Home -->
     <section class="section section-hero" id="home">
@@ -138,28 +140,36 @@
 
         <div class="gallery gallery--four" id="gallery-agricola">
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/foto01_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/foto01_small.webp" type="image/webp">
               <img src="/img/foto01_small.jpg" alt="Disco Disleite - caixas" loading="lazy" data-full="/img/foto01.jpg">
             </picture>
+            </button>
           </figure>
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/foto02_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/foto02_small.webp" type="image/webp">
               <img src="/img/foto02_small.jpg" alt="Camisas de filtro costuradas" loading="lazy" data-full="/img/foto02.jpg">
             </picture>
+            </button>
           </figure>
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/foto03_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/foto03_small.webp" type="image/webp">
               <img src="/img/foto03_small.jpg" alt="Filtro agrícola tipo 1" loading="lazy" data-full="/img/foto03.jpg">
             </picture>
+            </button>
           </figure>
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/foto04_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/foto04_small.webp" type="image/webp">
               <img src="/img/foto04_small.jpg" alt="Filtro agrícola tipo 2" loading="lazy" data-full="/img/foto04.jpg">
             </picture>
+            </button>
           </figure>
         </div>
       </div>
@@ -185,22 +195,28 @@
 
         <div class="gallery" id="gallery-industrial">
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/foto05_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/foto05_small.webp" type="image/webp">
               <img src="/img/foto05_small.jpg" alt="Filtro industrial sparkler" loading="lazy" data-full="/img/foto05.jpg">
             </picture>
+            </button>
           </figure>
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/foto06_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/foto06_small.webp" type="image/webp">
               <img src="/img/foto06_small.jpg" alt="Membrana filtrante circular" loading="lazy" data-full="/img/foto06.jpg">
             </picture>
+            </button>
           </figure>
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/foto07_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/foto07_small.webp" type="image/webp">
               <img src="/img/foto07_small.jpg" alt="Filtro industrial tipo prensa" loading="lazy" data-full="/img/foto07.jpg">
             </picture>
+            </button>
           </figure>
         </div>
       </div>
@@ -217,10 +233,12 @@
 
         <div class="gallery" id="gallery-fitas">
           <figure class="gallery-item">
-            <picture>
-              <source srcset="/img/fita_dupla_face2_small.webp" type="image/webp">
+            <button type="button" class="gallery-trigger">
+              <picture>
+                <source srcset="/img/fita_dupla_face2_small.webp" type="image/webp">
               <img src="/img/fita_dupla_face2_small.jpg" alt="Fita dupla face de algodão" loading="lazy" data-full="/img/fita_dupla_face2.jpg">
             </picture>
+            </button>
           </figure>
         </div>
       </div>
@@ -233,13 +251,19 @@
 
         <div class="contact-layout">
           <div class="contact-info">
+            <a href="https://wa.me/5513991191472" class="whatsapp-button" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.08L2 22l5.08-1.32C8.55 21.5 10.24 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.58-1.11-4.26-3.72-4.39-3.9-.13-.17-1.04-1.38-1.04-2.64s.65-1.87.88-2.13c.22-.25.5-.31.66-.31l.47.01c.15 0 .35-.06.55.42.22.53.73 1.83.8 1.96.06.13.1.28.02.45-.08.17-.13.28-.25.43-.13.15-.27.34-.38.46-.13.13-.26.27-.11.53.15.26.67 1.1 1.43 1.78.98.88 1.81 1.15 2.07 1.28.26.13.41.11.56-.07.15-.17.65-.76.82-1.02.17-.26.34-.21.57-.13.23.08 1.47.69 1.72.82.25.13.42.19.48.3.06.11.06.62-.16 1.23z"/>
+              </svg>
+              <span>Falar no WhatsApp</span>
+            </a>
             <div class="contact-item">
               <strong>Email:</strong>
               <a href="mailto:aps@apsfiltros.com.br">aps@apsfiltros.com.br</a>
             </div>
             <div class="contact-item">
               <strong>Telefone:</strong>
-              <span>+55 (13) 3203-4377</span>
+              <a href="tel:+551332034377">+55 (13) 3203-4377</a>
             </div>
             <div class="contact-item">
               <strong>Fax:</strong>
