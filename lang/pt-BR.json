@@ -41,7 +41,7 @@
     },
     "camisas": {
       "title": "Camisas de Filtro",
-      "desc": "Camisas de filtro tipo manga, costurados. Caixas ou pacotes com 100 peças em diversas dimensões. Aplicação: ordenhadeiras mecânicas e outros."
+      "desc": "Camisas de filtro tipo manga, costuradas. Caixas ou pacotes com 100 peças em diversas dimensões. Aplicação: ordenhadeiras mecânicas e outros."
     }
   },
   "industrial": {
@@ -58,13 +58,13 @@
   },
   "fitas": {
     "title": "Fitas Dupla Face",
-    "desc": "Distribuição de fitas de algodão amarela tipo dupla face \"forte\", medidas diversas sob consulta com 30,00 m de extensão para diversas aplicações como mega-hair."
+    "desc": "Distribuição de fitas de algodão amarelas tipo dupla face \"forte\", medidas diversas sob consulta com 30,00 m de extensão para diversas aplicações como mega-hair."
   },
   "contato": {
     "title": "Contato",
     "email_label": "Email:",
     "phone_label": "Telefone:",
-    "fax_label": "Fax:",
+    "whatsapp_label": "WhatsApp:",
     "address_label": "Endereço:",
     "whatsapp_cta": "Falar no WhatsApp"
   }
