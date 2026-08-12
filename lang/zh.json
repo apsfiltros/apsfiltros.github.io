@@ -64,7 +64,7 @@
     "title": "联系我们",
     "email_label": "电子邮件：",
     "phone_label": "电话：",
-    "fax_label": "传真：",
+    "whatsapp_label": "WhatsApp：",
     "address_label": "地址：",
     "whatsapp_cta": "通过WhatsApp联系"
   }

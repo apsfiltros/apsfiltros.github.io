@@ -64,7 +64,7 @@
     "title": "Contact",
     "email_label": "Email:",
     "phone_label": "Phone:",
-    "fax_label": "Fax:",
+    "whatsapp_label": "WhatsApp:",
     "address_label": "Address:",
     "whatsapp_cta": "Chat on WhatsApp"
   }
