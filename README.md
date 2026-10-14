@@ -70,3 +70,8 @@ CI (`.github/workflows/ci.yml`) runs the build and both checks on every pull
 request and on every push to `master`. On a pull request it also commits the
 regenerated pages back to the branch, so editing `lang/*.json` directly on
 GitHub works too.
+
+## License
+
+All rights reserved — see [LICENSE](LICENSE). The fonts in `fonts/` are
+third-party, under the SIL Open Font License.
