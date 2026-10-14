@@ -11,11 +11,13 @@
   Content-Type: application/manifest+json; charset=utf-8
   Cache-Control: public, max-age=604800
 
+# Pages reference these as /style.css?v=<content hash> (added by build.mjs),
+# so any change gets a new URL and the old one can be cached for good.
 /style.css
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
 
 /main.js
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
 
 /llms.txt
   Content-Type: text/plain; charset=utf-8

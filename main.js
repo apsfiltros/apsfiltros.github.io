@@ -19,7 +19,7 @@
   const backToTop = document.getElementById("back-to-top");
 
   const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxContent = lightbox ? lightbox.querySelector(".lightbox-content") : null;
   const lightboxClose = document.getElementById("lightbox-close");
   const lightboxPrev = document.getElementById("lightbox-prev");
   const lightboxNext = document.getElementById("lightbox-next");
@@ -148,7 +148,12 @@
   // Lightbox
   // ==========================================================================
 
-  if (lightbox && lightboxImg && lightboxClose && lightboxPrev && lightboxNext) {
+  if (lightbox && lightboxContent && lightboxClose && lightboxPrev && lightboxNext) {
+    // Created here rather than in the markup: an <img> needs a non-empty src
+    // to be valid HTML, and there's nothing to show until a photo is opened.
+    const lightboxImg = document.createElement("img");
+    lightboxContent.appendChild(lightboxImg);
+
     let currentGallery = [];
     let currentIndex = 0;
     let lastFocusedTrigger = null;
@@ -194,7 +199,7 @@
 
     function closeLightbox() {
       lightbox.hidden = true;
-      lightboxImg.src = "";
+      lightboxImg.removeAttribute("src");
       document.body.style.overflow = "";
 
       setBackgroundInert(false);

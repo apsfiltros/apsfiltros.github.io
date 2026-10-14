@@ -3,20 +3,21 @@ APS Filtros website
 
 ## Editing content
 
-`index.html`, `en/index.html`, `es/index.html`, `fr/index.html`, `vi/index.html`
-and `zh/index.html` are **generated** — don't edit them directly, changes will
-be overwritten. Edit these instead:
+`index.html`, `en/index.html`, `es/index.html`, `fr/index.html`, `vi/index.html`,
+`zh/index.html`, `404.html`, `sitemap.xml` and `llms.txt` are **generated** —
+don't edit them directly, changes will be overwritten. Edit these instead:
 
-- `template.html` — page structure/markup, shared by every language
+- `src/template.html` — page structure/markup, shared by every language
+- `src/404.html` — the "page not found" page
+- `src/site.json` — company name, email, phone, WhatsApp, address
 - `lang/*.json` — per-language text, metadata, and UI labels
 
-Then regenerate every language page and `sitemap.xml`:
+Then regenerate everything:
 
 ```
 node build.mjs
 ```
 
-A GitHub Action does this automatically for pull requests that touch
-`template.html`, `lang/**`, or `build.mjs`, and commits the regenerated
-output back to the PR branch — but running it locally lets you preview the
-result before pushing.
+Run `npm test` to check the result. The CI workflow does both on every pull
+request and commits the regenerated output back to the PR branch — but running
+it locally lets you preview the result before pushing.

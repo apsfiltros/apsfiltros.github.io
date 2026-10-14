@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="description" content="{{t:meta.description}}">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1a5c38">
   <link rel="canonical" href="{{CANONICAL_URL}}">
 {{HREFLANG_LINKS}}
-  <meta property="og:title" content="{{META_OG_TITLE}}">
-  <meta property="og:description" content="{{META_OG_DESCRIPTION}}">
+  <meta property="og:title" content="{{t:meta.og_title}}">
+  <meta property="og:description" content="{{t:meta.og_description}}">
   <meta property="og:image" content="https://www.apsfiltros.com.br/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:url" content="{{CANONICAL_URL}}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="{{OG_LOCALE}}">
-  <meta property="og:site_name" content="APS Filtros">
+  <meta property="og:site_name" content="{{site:brandName}}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{META_OG_TITLE}}">
-  <meta name="twitter:description" content="{{META_OG_DESCRIPTION}}">
+  <meta name="twitter:title" content="{{t:meta.og_title}}">
+  <meta name="twitter:description" content="{{t:meta.og_description}}">
   <meta name="twitter:image" content="https://www.apsfiltros.com.br/img/og-image.jpg">
-  <title>{{META_TITLE}}</title>
+  <title>{{t:meta.title}}</title>
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -30,30 +30,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "APS Manufatura e Comércio de Filtros Ltda",
-    "alternateName": "APS Filtros",
-    "description": "Fabricante e distribuidora de elementos filtrantes, membranas, discos Disleite e fitas dupla face desde 1981.",
-    "foundingDate": "1981",
-    "url": "https://www.apsfiltros.com.br/",
-    "logo": "https://www.apsfiltros.com.br/img/icon-512.png",
-    "image": "https://www.apsfiltros.com.br/img/og-image.jpg",
-    "telephone": "+55-13-3203-4377",
-    "email": "aps@apsfiltros.com.br",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rua Contra Almirante Esculápio César de Paiva, 184",
-      "addressLocality": "Santos",
-      "addressRegion": "SP",
-      "postalCode": "11088-320",
-      "addressCountry": "BR"
-    }
-  }
-  </script>
+  <link rel="stylesheet" href="/style.css?v={{CSS_VERSION}}">
+{{JSON_LD}}
 </head>
 <body>
 
@@ -61,11 +39,11 @@
 
   <!-- Navigation -->
   <header class="site-header" id="site-header">
-    <nav class="nav-container">
+    <nav class="nav-container" aria-label="{{t:ui.nav_main}}">
       <a href="{{LANG_ROOT}}" class="nav-logo">
         <img src="/img/aps.svg" alt="APS Filtros" width="120" height="40">
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="{{UI_OPEN_MENU}}" aria-expanded="false" aria-controls="nav-menu">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="{{t:ui.open_menu}}" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
       </button>
       <ul class="nav-menu" id="nav-menu">
@@ -256,7 +234,7 @@
 
         <div class="contact-layout">
           <div class="contact-info">
-            <a href="https://wa.me/5513991191472" class="whatsapp-button" target="_blank" rel="noopener">
+            <a href="{{site:whatsapp.url}}" class="whatsapp-button" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
                 <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.08L2 22l5.08-1.32C8.55 21.5 10.24 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.58-1.11-4.26-3.72-4.39-3.9-.13-.17-1.04-1.38-1.04-2.64s.65-1.87.88-2.13c.22-.25.5-.31.66-.31l.47.01c.15 0 .35-.06.55.42.22.53.73 1.83.8 1.96.06.13.1.28.02.45-.08.17-.13.28-.25.43-.13.15-.27.34-.38.46-.13.13-.26.27-.11.53.15.26.67 1.1 1.43 1.78.98.88 1.81 1.15 2.07 1.28.26.13.41.11.56-.07.15-.17.65-.76.82-1.02.17-.26.34-.21.57-.13.23.08 1.47.69 1.72.82.25.13.42.19.48.3.06.11.06.62-.16 1.23z"/>
               </svg>
@@ -265,22 +243,22 @@
             </a>
             <div class="contact-item">
               <strong data-i18n="contato.email_label">Email:</strong>
-              <a href="mailto:aps@apsfiltros.com.br">aps@apsfiltros.com.br</a>
+              <a href="mailto:{{site:email}}">{{site:email}}</a>
             </div>
             <div class="contact-item">
               <strong data-i18n="contato.phone_label">Telefone:</strong>
-              <a href="tel:+551332034377">+55 (13) 3203-4377</a>
+              <a href="tel:{{site:phone.e164}}">{{site:phone.display}}</a>
             </div>
             <div class="contact-item">
               <strong data-i18n="contato.whatsapp_label">WhatsApp:</strong>
-              <a href="https://wa.me/5513991191472" target="_blank" rel="noopener">+55 (13) 99119-1472<span class="sr-only" data-i18n="ui.new_tab">(abre em nova aba)</span></a>
+              <a href="{{site:whatsapp.url}}" target="_blank" rel="noopener">{{site:whatsapp.display}}<span class="sr-only" data-i18n="ui.new_tab">(abre em nova aba)</span></a>
             </div>
             <div class="contact-item">
               <strong data-i18n="contato.address_label">Endereço:</strong>
               <address>
-                APS Manufatura e Comércio de Filtros Ltda.<br>
-                Rua Contra Almirante Esculápio César de Paiva, 184<br>
-                CEP 11088-320 - Santos, SP, Brasil
+                {{site:legalName}}.<br>
+                {{site:address.street}}<br>
+                CEP {{site:address.postalCode}} - {{site:address.city}}, {{site:address.region}}, {{site:address.countryName}}
               </address>
             </div>
           </div>
@@ -296,7 +274,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <nav class="footer-nav">
+      <nav class="footer-nav" aria-label="{{t:ui.nav_footer}}">
         <a href="#home" data-i18n="nav.home">Início</a>
         <a href="#empresa" data-i18n="nav.empresa">Empresa</a>
         <a href="#agricola" data-i18n="nav.agricola">Área Agrícola</a>
@@ -304,23 +282,21 @@
         <a href="#fitas" data-i18n="nav.fitas">Fitas Dupla Face</a>
         <a href="#contato" data-i18n="nav.contato">Contato</a>
       </nav>
-      <p>&copy; 2026 APS Manufatura e Comércio de Filtros Ltda.</p>
+      <p>&copy; {{YEAR}} {{site:legalName}}.</p>
     </div>
   </footer>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="{{UI_LIGHTBOX_LABEL}}" hidden>
-    <button class="lightbox-close" id="lightbox-close" aria-label="{{UI_LIGHTBOX_CLOSE}}">&times;</button>
-    <button class="lightbox-prev" id="lightbox-prev" aria-label="{{UI_LIGHTBOX_PREV}}">&#8249;</button>
-    <button class="lightbox-next" id="lightbox-next" aria-label="{{UI_LIGHTBOX_NEXT}}">&#8250;</button>
-    <div class="lightbox-content">
-      <img src="" alt="" id="lightbox-img">
-    </div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="{{t:ui.lightbox_label}}" hidden>
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="{{t:ui.lightbox_close}}">&times;</button>
+    <button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="{{t:ui.lightbox_prev}}">&#8249;</button>
+    <button type="button" class="lightbox-next" id="lightbox-next" aria-label="{{t:ui.lightbox_next}}">&#8250;</button>
+    <div class="lightbox-content"></div>
   </div>
 
   <!-- Back to Top -->
-  <button class="back-to-top" id="back-to-top" aria-label="{{UI_BACK_TO_TOP}}">↑</button>
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="{{t:ui.back_to_top}}">↑</button>
 
-  <script src="/main.js"></script>
+  <script src="/main.js?v={{JS_VERSION}}"></script>
 </body>
 </html>
