@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "APS Filtros — Phần Tử Lọc, Màng Lọc và Đĩa Lọc Từ Năm 1981",
+    "title": "APS Filtros — Phần tử lọc, màng lọc và đĩa lọc từ năm 1981",
     "description": "APS Filtros sản xuất và phân phối phần tử lọc, màng lọc, đĩa lọc Disleite và băng keo hai mặt từ năm 1981. Santos, SP, Brazil.",
-    "og_title": "APS Filtros — Phần Tử Lọc Từ Năm 1981",
+    "og_title": "APS Filtros — Phần tử lọc từ năm 1981",
     "og_description": "Phần tử lọc, màng lọc, đĩa lọc Disleite và băng keo hai mặt từ năm 1981. Santos, SP, Brazil."
   },
   "ui": {
@@ -19,7 +19,7 @@
     "lightbox_counter": "{n} / {total}"
   },
   "a11y": {
-    "skip_to_content": "Bỏ qua để đến nội dung"
+    "skip_to_content": "Chuyển đến nội dung"
   },
   "nav": {
     "home": "Trang chủ",
@@ -30,40 +30,40 @@
     "contato": "Liên hệ"
   },
   "hero": {
-    "title": "APS Manufatura e Comércio de Filtros Ltda",
-    "subtitle": "Sản xuất các phần tử lọc chất lượng từ năm 1981"
+    "title": "Phần tử lọc, màng lọc và đĩa lọc Disleite",
+    "subtitle": "Dành cho chuỗi sữa, phòng thí nghiệm và ngành sơn, vecni, dầu thực vật — từ năm 1981."
   },
   "empresa": {
     "title": "Công ty",
-    "text": "APS Filtros được thành lập vào năm 1981, ban đầu hoạt động trong lĩnh vực sản xuất và thương mại các phần tử lọc \"loại màng\" cho ngành nông nghiệp (kiểm soát chế biến sữa - phòng thí nghiệm / lọc sữa / phân tích cà phê hòa tan và mật mía), sơn và vecni (trong thiết bị lọc ép / sparkler), sau đó mở rộng sang các phân khúc sản phẩm dùng một lần khác cũng như phân phối băng keo hai mặt bằng cotton."
+    "text": "APS Filtros được thành lập năm 1981 để sản xuất và kinh doanh các phần tử lọc dạng màng. Ban đầu, công ty phục vụ ngành nông nghiệp — kiểm soát chế biến sữa, phân tích phòng thí nghiệm, lọc sữa và phân tích cà phê hòa tan, mật mía — cùng ngành sơn và vecni, với các phần tử dùng cho máy lọc ép và lọc sparkler. Sau đó, công ty mở rộng sang các phân khúc sản phẩm dùng một lần khác và phân phối băng keo hai mặt bằng cotton. Công ty đặt tại Santos, bang São Paulo, Brazil."
   },
   "agricola": {
     "title": "Sản phẩm - Nông nghiệp",
     "subtitle": "Chuỗi sữa và phân tích phòng thí nghiệm",
     "disleite": {
       "title": "Đĩa Lentini - Disleite",
-      "desc": "Đĩa phân tích sữa, cà phê hòa tan hoặc các chất lỏng khác. Hộp 100 đơn vị loại \"APS\" - thương hiệu DISLEITE - Ø=31,7 mm hoặc 1 ¼\". Được sử dụng trong bộ lọc minit (còn gọi là lactofiltro) cho bài kiểm tra lọc sữa, một quy trình phòng thí nghiệm đo lượng cặn không tan — bụi, lông và các hạt khác — trong sữa tươi, cho biết điều kiện vệ sinh của quá trình vắt sữa. Cũng được sử dụng để phân tích cà phê hòa tan, mật mía và các chất lỏng khác."
+      "desc": "Đĩa lọc dùng để phân tích sữa, cà phê hòa tan hoặc các chất lỏng khác. Hộp 100 đơn vị loại \"APS\" - thương hiệu DISLEITE - Ø=31,7 mm hoặc 1 ¼\". Được sử dụng trong bộ lọc minit (còn gọi là lactofiltro) cho bài kiểm tra lọc sữa, một quy trình phòng thí nghiệm đo lượng cặn không tan — bụi, lông và các hạt khác — trong sữa tươi, cho biết điều kiện vệ sinh của quá trình vắt sữa. Cũng được sử dụng để phân tích cà phê hòa tan, mật mía và các chất lỏng khác."
     },
     "camisas": {
-      "title": "Ống lọc",
-      "desc": "Bộ lọc loại ống, may. Hộp hoặc gói 100 chiếc với nhiều kích thước khác nhau. Ứng dụng: máy vắt sữa cơ học và các ứng dụng khác."
+      "title": "Túi lọc dạng ống",
+      "desc": "Túi lọc dạng ống, được may sẵn. Hộp hoặc gói 100 chiếc với nhiều kích thước khác nhau. Ứng dụng: máy vắt sữa cơ học và các ứng dụng khác."
     }
   },
   "industrial": {
     "title": "Sản phẩm - Công nghiệp",
     "subtitle": "Lọc cho ngành sơn, vecni và dầu thực vật",
     "resinas": {
-      "title": "Làm trong nhựa",
-      "desc": "Chuỗi công nghiệp sơn để làm trong nhựa, sử dụng trong bộ lọc loại sparkler."
+      "title": "Làm trong nhựa resin",
+      "desc": "Dùng trong ngành sơn để làm trong nhựa resin, lắp trong bộ lọc loại sparkler."
     },
     "membranas": {
       "title": "Màng lọc tròn",
-      "desc": "Giấy lọc hoặc vải không dệt (bộ lọc công nghiệp). Hộp và/hoặc gói 100 chiếc, sử dụng trong bộ lọc sparkler hoặc loại ép. Ứng dụng: lọc nhựa và vecni trong ngành sơn và vecni và/hoặc lọc và làm trong chất lỏng trong ngành dầu thực vật và các ngành khác."
+      "desc": "Giấy lọc hoặc vải không dệt (bộ lọc công nghiệp). Hộp và/hoặc gói 100 chiếc, sử dụng trong bộ lọc sparkler hoặc loại ép. Ứng dụng: lọc nhựa resin và vecni trong ngành sơn và vecni và/hoặc lọc và làm trong chất lỏng trong ngành dầu thực vật và các ngành khác."
     }
   },
   "fitas": {
     "title": "Băng keo hai mặt",
-    "desc": "Phân phối băng keo hai mặt cotton vàng loại \"mạnh\", nhiều kích thước theo yêu cầu với chiều dài 30,00 m cho các ứng dụng đa dạng như nối tóc."
+    "desc": "Phân phối băng keo hai mặt bằng cotton màu vàng, loại \"mạnh\", dài 30 m, nhiều kích thước theo yêu cầu, dùng cho nhiều ứng dụng như nối tóc."
   },
   "contato": {
     "title": "Liên hệ",
@@ -75,9 +75,9 @@
   },
   "gallery": {
     "foto01": "Hộp đĩa lọc Disleite",
-    "foto02": "Ống lọc may",
-    "foto03": "Ống lọc soi dưới ánh sáng",
-    "foto04": "Ống lọc dạng ống",
+    "foto02": "Túi lọc dạng ống đã may",
+    "foto03": "Túi lọc soi dưới ánh sáng",
+    "foto04": "Các túi lọc dạng ống",
     "foto05": "Bộ lọc công nghiệp sparkler",
     "foto06": "Màng lọc tròn",
     "foto07": "Bộ lọc công nghiệp loại ép",
