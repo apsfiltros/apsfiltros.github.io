@@ -151,8 +151,17 @@
   if (lightbox && lightboxContent && lightboxClose && lightboxPrev && lightboxNext) {
     // Created here rather than in the markup: an <img> needs a non-empty src
     // to be valid HTML, and there's nothing to show until a photo is opened.
+    // A <picture> lets the browser take the WebP (about half the size) and
+    // fall back to the JPEG on its own.
+    const lightboxPicture = document.createElement("picture");
+    const lightboxWebp = document.createElement("source");
+    lightboxWebp.type = "image/webp";
     const lightboxImg = document.createElement("img");
-    lightboxContent.appendChild(lightboxImg);
+    lightboxPicture.append(lightboxWebp, lightboxImg);
+    lightboxContent.appendChild(lightboxPicture);
+
+    const lightboxCounter = lightbox.querySelector(".lightbox-counter");
+    const counterTemplate = lightbox.getAttribute("data-counter") || "{n} / {total}";
 
     let currentGallery = [];
     let currentIndex = 0;
@@ -181,11 +190,10 @@
     }
 
     function openLightbox() {
-      const img = currentGallery[currentIndex];
-      const fullSrc = img.getAttribute("data-full") || img.src;
-      lightboxImg.src = fullSrc;
-      lightboxImg.alt = img.alt;
+      updateLightboxImage();
       lightbox.hidden = false;
+      // Next frame, so the opacity transition starts from the hidden state
+      requestAnimationFrame(() => lightbox.classList.add("is-open"));
       document.body.style.overflow = "hidden";
 
       const hasMultiple = currentGallery.length > 1;
@@ -198,7 +206,9 @@
     }
 
     function closeLightbox() {
+      lightbox.classList.remove("is-open");
       lightbox.hidden = true;
+      lightboxWebp.removeAttribute("srcset");
       lightboxImg.removeAttribute("src");
       document.body.style.overflow = "";
 
@@ -223,20 +233,57 @@
 
     function updateLightboxImage() {
       const img = currentGallery[currentIndex];
-      const fullSrc = img.getAttribute("data-full") || img.src;
-      lightboxImg.src = fullSrc;
+      const webp = img.getAttribute("data-full-webp");
+      if (webp) lightboxWebp.srcset = webp;
+      else lightboxWebp.removeAttribute("srcset");
+      lightboxImg.src = img.getAttribute("data-full") || img.src;
       lightboxImg.alt = img.alt;
+      if (lightboxCounter) {
+        lightboxCounter.textContent =
+          currentGallery.length > 1
+            ? counterTemplate.replace("{n}", currentIndex + 1).replace("{total}", currentGallery.length)
+            : "";
+      }
     }
 
     lightboxClose.addEventListener("click", closeLightbox);
     lightboxPrev.addEventListener("click", showPrev);
     lightboxNext.addEventListener("click", showNext);
 
+    // A swipe that starts on the photo and ends on the backdrop also produces
+    // a click on the backdrop — that one must not close the lightbox.
+    let ignoreNextClick = false;
+
     // Close on backdrop click
     lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox || e.target === lightbox.querySelector(".lightbox-content")) {
+      if (ignoreNextClick) {
+        ignoreNextClick = false;
+        return;
+      }
+      if (e.target === lightbox || e.target === lightboxContent) {
         closeLightbox();
       }
+    });
+
+    // Swipe left/right on touch screens. Ignored while pinch-zoomed, so
+    // panning around a zoomed photo doesn't change it.
+    let swipeStartX = null;
+    lightbox.addEventListener("pointerdown", (e) => {
+      if (e.pointerType !== "mouse" && e.isPrimary) swipeStartX = e.clientX;
+    });
+    lightbox.addEventListener("pointerup", (e) => {
+      if (swipeStartX === null) return;
+      const dx = e.clientX - swipeStartX;
+      swipeStartX = null;
+      const zoomed = window.visualViewport && window.visualViewport.scale > 1.01;
+      if (zoomed || Math.abs(dx) < 50 || currentGallery.length < 2) return;
+      ignoreNextClick = true;
+      setTimeout(() => (ignoreNextClick = false), 400);
+      if (dx < 0) showNext();
+      else showPrev();
+    });
+    lightbox.addEventListener("pointercancel", () => {
+      swipeStartX = null;
     });
 
     // Keyboard navigation. The inert background keeps Tab from moving
@@ -281,7 +328,7 @@
   // ==========================================================================
 
   const animateElements = document.querySelectorAll(
-    ".product-card, .product-cards-grid, .gallery-item, .text-block, .contact-layout, .section-subtitle"
+    ".product-card, .gallery-item, .text-block, .contact-layout, .section-subtitle"
   );
 
   animateElements.forEach((el) => {

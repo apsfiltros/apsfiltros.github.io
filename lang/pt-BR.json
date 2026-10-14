@@ -15,7 +15,8 @@
     "language": "Idioma",
     "new_tab": "(abre em nova aba)",
     "nav_main": "Navegação principal",
-    "nav_footer": "Navegação do rodapé"
+    "nav_footer": "Navegação do rodapé",
+    "lightbox_counter": "{n} de {total}"
   },
   "a11y": {
     "skip_to_content": "Pular para o conteúdo"
@@ -71,5 +72,17 @@
     "whatsapp_label": "WhatsApp:",
     "address_label": "Endereço:",
     "whatsapp_cta": "Falar no WhatsApp"
+  },
+  "gallery": {
+    "foto01": "Disco Disleite - caixas",
+    "foto02": "Camisas de filtro costuradas",
+    "foto03": "Camisa de filtro vista contra a luz",
+    "foto04": "Camisas de filtro tipo manga",
+    "foto05": "Filtro industrial sparkler",
+    "foto06": "Membrana filtrante circular",
+    "foto07": "Filtro industrial tipo prensa",
+    "fita_dupla_face1": "Dois rolos de fita dupla face de algodão",
+    "fita_dupla_face2": "Fita dupla face de algodão com cartão da APS Filtros",
+    "fita_dupla_face3": "Rolos de fita dupla face de algodão vistos de lado"
   }
 }

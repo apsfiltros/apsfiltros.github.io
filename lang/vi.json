@@ -15,7 +15,8 @@
     "language": "Ngôn ngữ",
     "new_tab": "(mở trong thẻ mới)",
     "nav_main": "Điều hướng chính",
-    "nav_footer": "Điều hướng chân trang"
+    "nav_footer": "Điều hướng chân trang",
+    "lightbox_counter": "{n} / {total}"
   },
   "a11y": {
     "skip_to_content": "Bỏ qua để đến nội dung"
@@ -71,5 +72,17 @@
     "whatsapp_label": "WhatsApp:",
     "address_label": "Địa chỉ:",
     "whatsapp_cta": "Trò chuyện qua WhatsApp"
+  },
+  "gallery": {
+    "foto01": "Hộp đĩa lọc Disleite",
+    "foto02": "Ống lọc may",
+    "foto03": "Ống lọc soi dưới ánh sáng",
+    "foto04": "Ống lọc dạng ống",
+    "foto05": "Bộ lọc công nghiệp sparkler",
+    "foto06": "Màng lọc tròn",
+    "foto07": "Bộ lọc công nghiệp loại ép",
+    "fita_dupla_face1": "Hai cuộn băng keo hai mặt bằng cotton",
+    "fita_dupla_face2": "Băng keo hai mặt bằng cotton kèm danh thiếp APS Filtros",
+    "fita_dupla_face3": "Các cuộn băng keo hai mặt bằng cotton nhìn từ bên cạnh"
   }
 }
