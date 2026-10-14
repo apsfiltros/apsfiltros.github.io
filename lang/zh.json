@@ -15,7 +15,8 @@
     "language": "语言",
     "new_tab": "（在新标签页中打开）",
     "nav_main": "主导航",
-    "nav_footer": "页脚导航"
+    "nav_footer": "页脚导航",
+    "lightbox_counter": "第 {n} 张，共 {total} 张"
   },
   "a11y": {
     "skip_to_content": "跳到内容"
@@ -71,5 +72,17 @@
     "whatsapp_label": "WhatsApp：",
     "address_label": "地址：",
     "whatsapp_cta": "通过WhatsApp联系"
+  },
+  "gallery": {
+    "foto01": "Disleite滤片包装盒",
+    "foto02": "缝制滤袋",
+    "foto03": "对着光线的滤袋",
+    "foto04": "袖筒式滤袋",
+    "foto05": "sparkler型工业过滤器",
+    "foto06": "圆形过滤膜",
+    "foto07": "压滤型工业过滤器",
+    "fita_dupla_face1": "两卷棉质双面胶带",
+    "fita_dupla_face2": "附有APS Filtros名片的棉质双面胶带",
+    "fita_dupla_face3": "侧面视角的棉质双面胶带卷"
   }
 }

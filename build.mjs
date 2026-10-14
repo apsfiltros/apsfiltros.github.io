@@ -13,6 +13,7 @@
 //   data-i18n="key"   replace the element's text with that translation
 //   {{t:key}}         a translation, e.g. inside an attribute
 //   {{site:key}}      a value from src/site.json (contact details etc.)
+//   {{gallery:name}}  the photo gallery listed under that name in src/galleries.json
 //   {{NAME}}          a value computed here (canonical URL, hreflang links...)
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
@@ -68,6 +69,8 @@ const site = JSON.parse(read("src/site.json"));
 site.phone.url = `tel:${site.phone.e164}`;
 site.whatsapp.url = `https://wa.me/${site.whatsapp.e164.replace(/^\+/, "")}`;
 
+const galleries = JSON.parse(read("src/galleries.json"));
+
 const dicts = Object.fromEntries(LANGS.map((l) => [l.code, JSON.parse(read(`lang/${l.file}`))]));
 
 // Every language must have exactly the same keys as Portuguese.
@@ -85,11 +88,57 @@ const computed = {
 };
 
 // --------------------------------------------------------------------------
+// Galleries
+// --------------------------------------------------------------------------
+
+// Width/height straight from the JPEG header (the SOFn marker), so <img> tags
+// carry real dimensions without an image library.
+function jpegSize(rel) {
+  const buf = readFileSync(join(ROOT, rel));
+  let i = 2;
+  while (i + 9 < buf.length) {
+    if (buf[i] !== 0xff) { i++; continue; }
+    const marker = buf[i + 1];
+    const isSOF = marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker);
+    if (isSOF) return { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  throw new Error(`${rel}: no JPEG size found`);
+}
+
+// Each photo needs four files from optimize-images.mjs: <name>_small.{jpg,webp}
+// (gallery) and <name>.{jpg,webp} (lightbox).
+function renderGallery(name, dict, sourceName) {
+  const photos = galleries[name];
+  if (!photos) {
+    errors.push(`${sourceName}: unknown gallery "${name}" (see src/galleries.json)`);
+    return "";
+  }
+  return photos.map((photo) => {
+    for (const f of [`${photo}_small.jpg`, `${photo}_small.webp`, `${photo}.jpg`, `${photo}.webp`]) {
+      if (!existsSync(join(ROOT, "img", f))) errors.push(`img/${f} is missing — run npm run optimize-images`);
+    }
+    const alt = getNested(dict, `gallery.${photo}`);
+    if (typeof alt !== "string") errors.push(`${sourceName}: missing translation "gallery.${photo}"`);
+    if (!existsSync(join(ROOT, "img", `${photo}_small.jpg`))) return "";
+    const { width, height } = jpegSize(`img/${photo}_small.jpg`);
+    return `          <figure class="gallery-item">
+            <button type="button" class="gallery-trigger" aria-haspopup="dialog">
+              <picture>
+                <source srcset="/img/${photo}_small.webp" type="image/webp">
+                <img src="/img/${photo}_small.jpg" alt="${escapeHtml(alt ?? "")}" width="${width}" height="${height}" loading="lazy" decoding="async" data-full="/img/${photo}.jpg" data-full-webp="/img/${photo}.webp">
+              </picture>
+            </button>
+          </figure>`;
+  }).join("\n");
+}
+
+// --------------------------------------------------------------------------
 // Rendering
 // --------------------------------------------------------------------------
 
 function render(source, sourceName, dict, perPage = {}) {
-  let html = source;
+  let html = source.replace(/\{\{gallery:([a-z0-9_-]+)\}\}/g, (_m, name) => renderGallery(name, dict, sourceName));
 
   // Text content of every data-i18n="key" element (leaf elements only — no
   // nested tags inside a data-i18n target).

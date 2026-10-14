@@ -1,83 +1,59 @@
 #!/usr/bin/env node
-// Re-encodes product photos into web-optimized JPEG+WebP pairs at two
-// sizes — gallery thumbnail and lightbox — and archives the untouched
-// originals under img/original/. Only downscales, never enlarges.
+// Turns the full-resolution product photos in img/original/ into the
+// web-optimized files the site uses, as JPEG + WebP pairs at two sizes:
 //
-// Run after adding or replacing a source photo in img/:
-//   npm install   (first time only — installs sharp, a dev-only tool)
-//   node optimize-images.mjs
+//   img/<name>_small.{jpg,webp}   gallery thumbnail, max 560px wide
+//   img/<name>.{jpg,webp}         lightbox, max 1600px wide
+//
+// img/original/ is the source of truth — never edit or replace the files in
+// img/ directly, they're overwritten here. To add or replace a photo:
+//   1. put the full-size JPEG in img/original/ (e.g. img/original/foto08.jpg)
+//   2. npm install            (first time only — installs sharp, dev-only)
+//   3. npm run optimize-images
+//   4. list it in src/galleries.json, add its alt text to every lang/*.json
+//      under "gallery", then run node build.mjs
 
 import sharp from "sharp";
-import { mkdirSync, copyFileSync, existsSync } from "node:fs";
-import { join, basename } from "node:path";
+import { readdirSync } from "node:fs";
+import { join, basename, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { dirname } from "node:path";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const IMG_DIR = join(ROOT, "img");
 const ORIGINAL_DIR = join(IMG_DIR, "original");
-
-const SOURCES = [
-  "foto01.jpg",
-  "foto02.jpg",
-  "foto03.jpg",
-  "foto04.jpg",
-  "foto05.jpg",
-  "foto06.jpg",
-  "foto07.jpg",
-  "fita_dupla_face1.jpg",
-  "fita_dupla_face2.jpg",
-  "fita_dupla_face3.jpg",
-];
 
 const SIZES = [
   { suffix: "_small", maxWidth: 560, jpegQuality: 78, webpQuality: 80 },
   { suffix: "", maxWidth: 1600, jpegQuality: 82, webpQuality: 82 },
 ];
 
-mkdirSync(ORIGINAL_DIR, { recursive: true });
+const sources = readdirSync(ORIGINAL_DIR).filter((f) => /\.jpe?g$/i.test(f)).sort();
 
-for (const file of SOURCES) {
-  const srcPath = join(IMG_DIR, file);
-  const archivePath = join(ORIGINAL_DIR, file);
+for (const file of sources) {
+  const name = basename(file).replace(/\.jpe?g$/i, "");
 
-  if (!existsSync(archivePath)) {
-    if (!existsSync(srcPath)) {
-      console.warn(`! missing source: ${file}`);
-      continue;
-    }
-    // First run: archive the untouched original before anything
-    // overwrites it. Later runs read from the archive, so re-running
-    // this script never re-compresses an already-optimized file.
-    copyFileSync(srcPath, archivePath);
-  }
-
-  const name = basename(file, ".jpg");
+  // .rotate() with no args applies the EXIF Orientation tag before resizing
+  // (phone photos are often stored sideways with a tag saying so — the
+  // fita_dupla_face photos all are) and then drops it. Output files carry no
+  // metadata, so no GPS location or camera details leave img/original/.
+  const source = sharp(join(ORIGINAL_DIR, file)).rotate();
 
   for (const size of SIZES) {
-    const outJpeg = join(IMG_DIR, `${name}${size.suffix}.jpg`);
-    const outWebp = join(IMG_DIR, `${name}${size.suffix}.webp`);
-
-    // .rotate() with no args auto-orients from EXIF before resizing,
-    // then strips the tag (pixels are now physically correct) — without
-    // it, sharp resizes the raw sensor-orientation pixel grid as-is,
-    // which comes out sideways for any photo with a non-1 EXIF
-    // Orientation tag (phone/camera photos routinely have one; the
-    // fita_dupla_face photos all do, at orientation 6).
-    const info = await sharp(archivePath)
-      .rotate()
-      .resize({ width: size.maxWidth, withoutEnlargement: true })
-      .jpeg({ quality: size.jpegQuality, progressive: true, mozjpeg: true })
-      .toFile(outJpeg);
-
-    await sharp(archivePath)
-      .rotate()
-      .resize({ width: size.maxWidth, withoutEnlargement: true })
-      .webp({ quality: size.webpQuality, effort: 6 })
-      .toFile(outWebp);
-
+    const resized = source.clone().resize({ width: size.maxWidth, withoutEnlargement: true });
+    const [info] = await Promise.all([
+      resized
+        .clone()
+        .jpeg({ quality: size.jpegQuality, progressive: true, mozjpeg: true })
+        .toFile(join(IMG_DIR, `${name}${size.suffix}.jpg`)),
+      // effort 6 (default 4): smaller files; at 4 some WebPs came out larger
+      // than the JPEG they replace
+      resized
+        .clone()
+        .webp({ quality: size.webpQuality, effort: 6 })
+        .toFile(join(IMG_DIR, `${name}${size.suffix}.webp`)),
+    ]);
     console.log(`  ${name}${size.suffix}: ${info.width}x${info.height}px`);
   }
 }
 
-console.log("\nDone. Untouched originals are in img/original/.");
+console.log(`\nDone: ${sources.length} photos from img/original/.`);

@@ -1,7 +1,7 @@
 // Run with: npm test   (Node's built-in test runner — no dependencies)
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, writeFileSync, existsSync, statSync, mkdtempSync, cpSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, statSync, mkdtempSync, cpSync, symlinkSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -64,6 +64,7 @@ function buildCopy(mutate) {
   for (const f of ["build.mjs", "src", "lang", "style.css", "main.js", "sitemap.xml"]) {
     cpSync(join(ROOT, f), join(dir, f), { recursive: true });
   }
+  symlinkSync(join(ROOT, "img"), join(dir, "img"));
   mutate(dir);
   const r = spawnSync(process.execPath, ["build.mjs"], { cwd: dir, encoding: "utf8" });
   return { ...r, dir };
@@ -134,6 +135,21 @@ for (const page of PAGES) {
       assert.ok(existsSync(file) && statSync(file).isFile(), `${ref} does not exist`);
       const path = ref.split(/[?#]/)[0];
       assert.ok(!blocked.some((re) => re.test(path)), `${ref} is blocked by _redirects`);
+    }
+  });
+
+  test(`${page.file}: every image has alt text and real dimensions; galleries are complete`, () => {
+    const html = read(page.file);
+    for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) {
+      assert.match(tag, /\salt="[^"]+"/, `no alt: ${tag}`);
+      assert.match(tag, /\swidth="\d+" height="\d+"/, `no width/height: ${tag}`);
+    }
+    const galleries = JSON.parse(read("src/galleries.json"));
+    for (const [name, photos] of Object.entries(galleries)) {
+      const block = html.match(new RegExp(`id="gallery-${name}">([\\s\\S]*?)\\n        </div>`))?.[1] ?? "";
+      for (const photo of photos) {
+        assert.ok(block.includes(`data-full-webp="/img/${photo}.webp"`), `${name} gallery is missing ${photo}`);
+      }
     }
   });
 

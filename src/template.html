@@ -112,38 +112,7 @@
         </div>
 
         <div class="gallery gallery--four" id="gallery-agricola">
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/foto01_small.webp" type="image/webp">
-              <img src="/img/foto01_small.jpg" alt="Disco Disleite - caixas" loading="lazy" data-full="/img/foto01.jpg">
-            </picture>
-            </button>
-          </figure>
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/foto02_small.webp" type="image/webp">
-              <img src="/img/foto02_small.jpg" alt="Camisas de filtro costuradas" loading="lazy" data-full="/img/foto02.jpg">
-            </picture>
-            </button>
-          </figure>
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/foto03_small.webp" type="image/webp">
-              <img src="/img/foto03_small.jpg" alt="Filtro agrícola tipo 1" loading="lazy" data-full="/img/foto03.jpg">
-            </picture>
-            </button>
-          </figure>
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/foto04_small.webp" type="image/webp">
-              <img src="/img/foto04_small.jpg" alt="Filtro agrícola tipo 2" loading="lazy" data-full="/img/foto04.jpg">
-            </picture>
-            </button>
-          </figure>
+{{gallery:agricola}}
         </div>
       </div>
     </section>
@@ -174,30 +143,7 @@
         </div>
 
         <div class="gallery" id="gallery-industrial">
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/foto05_small.webp" type="image/webp">
-              <img src="/img/foto05_small.jpg" alt="Filtro industrial sparkler" loading="lazy" data-full="/img/foto05.jpg">
-            </picture>
-            </button>
-          </figure>
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/foto06_small.webp" type="image/webp">
-              <img src="/img/foto06_small.jpg" alt="Membrana filtrante circular" loading="lazy" data-full="/img/foto06.jpg">
-            </picture>
-            </button>
-          </figure>
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/foto07_small.webp" type="image/webp">
-              <img src="/img/foto07_small.jpg" alt="Filtro industrial tipo prensa" loading="lazy" data-full="/img/foto07.jpg">
-            </picture>
-            </button>
-          </figure>
+{{gallery:industrial}}
         </div>
       </div>
     </section>
@@ -215,14 +161,7 @@
         </div>
 
         <div class="gallery" id="gallery-fitas">
-          <figure class="gallery-item">
-            <button type="button" class="gallery-trigger">
-              <picture>
-                <source srcset="/img/fita_dupla_face2_small.webp" type="image/webp">
-              <img src="/img/fita_dupla_face2_small.jpg" alt="Fita dupla face de algodão" loading="lazy" data-full="/img/fita_dupla_face2.jpg">
-            </picture>
-            </button>
-          </figure>
+{{gallery:fitas}}
         </div>
       </div>
     </section>
@@ -287,11 +226,12 @@
   </footer>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="{{t:ui.lightbox_label}}" hidden>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="{{t:ui.lightbox_label}}" data-counter="{{t:ui.lightbox_counter}}" hidden>
     <button type="button" class="lightbox-close" id="lightbox-close" aria-label="{{t:ui.lightbox_close}}">&times;</button>
     <button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="{{t:ui.lightbox_prev}}">&#8249;</button>
     <button type="button" class="lightbox-next" id="lightbox-next" aria-label="{{t:ui.lightbox_next}}">&#8250;</button>
     <div class="lightbox-content"></div>
+    <p class="lightbox-counter" aria-live="polite"></p>
   </div>
 
   <!-- Back to Top -->

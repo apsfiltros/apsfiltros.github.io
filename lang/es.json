@@ -15,7 +15,8 @@
     "language": "Idioma",
     "new_tab": "(se abre en una pestaña nueva)",
     "nav_main": "Navegación principal",
-    "nav_footer": "Navegación del pie de página"
+    "nav_footer": "Navegación del pie de página",
+    "lightbox_counter": "{n} de {total}"
   },
   "a11y": {
     "skip_to_content": "Saltar al contenido"
@@ -71,5 +72,17 @@
     "whatsapp_label": "WhatsApp:",
     "address_label": "Dirección:",
     "whatsapp_cta": "Hablar por WhatsApp"
+  },
+  "gallery": {
+    "foto01": "Cajas de discos Disleite",
+    "foto02": "Mangas filtrantes cosidas",
+    "foto03": "Manga filtrante vista a contraluz",
+    "foto04": "Mangas filtrantes",
+    "foto05": "Filtro industrial sparkler",
+    "foto06": "Membrana filtrante circular",
+    "foto07": "Filtro industrial tipo prensa",
+    "fita_dupla_face1": "Dos rollos de cinta de doble cara de algodón",
+    "fita_dupla_face2": "Cinta de doble cara de algodón con tarjeta de APS Filtros",
+    "fita_dupla_face3": "Rollos de cinta de doble cara de algodón vistos de lado"
   }
 }

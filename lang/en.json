@@ -15,7 +15,8 @@
     "language": "Language",
     "new_tab": "(opens in a new tab)",
     "nav_main": "Main navigation",
-    "nav_footer": "Footer navigation"
+    "nav_footer": "Footer navigation",
+    "lightbox_counter": "{n} of {total}"
   },
   "a11y": {
     "skip_to_content": "Skip to content"
@@ -71,5 +72,17 @@
     "whatsapp_label": "WhatsApp:",
     "address_label": "Address:",
     "whatsapp_cta": "Chat on WhatsApp"
+  },
+  "gallery": {
+    "foto01": "Boxes of Disleite discs",
+    "foto02": "Sewn filter sleeves",
+    "foto03": "Filter sleeve held against the light",
+    "foto04": "Sleeve-type filters",
+    "foto05": "Industrial sparkler filter",
+    "foto06": "Circular filter membrane",
+    "foto07": "Industrial press-type filter",
+    "fita_dupla_face1": "Two rolls of double-sided cotton tape",
+    "fita_dupla_face2": "Double-sided cotton tape with an APS Filtros business card",
+    "fita_dupla_face3": "Rolls of double-sided cotton tape seen from the side"
   }
 }

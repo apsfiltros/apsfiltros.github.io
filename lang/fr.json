@@ -15,7 +15,8 @@
     "language": "Langue",
     "new_tab": "(s'ouvre dans un nouvel onglet)",
     "nav_main": "Navigation principale",
-    "nav_footer": "Navigation de pied de page"
+    "nav_footer": "Navigation de pied de page",
+    "lightbox_counter": "{n} sur {total}"
   },
   "a11y": {
     "skip_to_content": "Passer au contenu"
@@ -71,5 +72,17 @@
     "whatsapp_label": "WhatsApp :",
     "address_label": "Adresse :",
     "whatsapp_cta": "Discuter sur WhatsApp"
+  },
+  "gallery": {
+    "foto01": "Boîtes de disques Disleite",
+    "foto02": "Manchons filtrants cousus",
+    "foto03": "Manchon filtrant vu à contre-jour",
+    "foto04": "Manchons filtrants",
+    "foto05": "Filtre industriel sparkler",
+    "foto06": "Membrane filtrante circulaire",
+    "foto07": "Filtre industriel de type presse",
+    "fita_dupla_face1": "Deux rouleaux de ruban double face en coton",
+    "fita_dupla_face2": "Ruban double face en coton avec une carte de visite APS Filtros",
+    "fita_dupla_face3": "Rouleaux de ruban double face en coton vus de côté"
   }
 }
