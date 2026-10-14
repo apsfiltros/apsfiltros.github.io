@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
   <title>Página não encontrada — APS Filtros</title>
-  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <style>
     .error-page {
       min-height: 100vh;
@@ -57,9 +57,20 @@
       margin: 0 auto;
       font-size: 1.05rem;
     }
+    .error-text--secondary {
+      margin-top: 0.75rem;
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
     .error-back {
       display: inline-block;
-      margin-top: 2rem;
       padding: 0.75rem 1.75rem;
       background: #ffffff;
       color: var(--color-primary-dark);
@@ -67,24 +78,39 @@
       font-weight: 600;
       transition: transform var(--transition), box-shadow var(--transition);
     }
+    .error-back--secondary {
+      background: transparent;
+      color: #ffffff;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+    }
     .error-back:hover {
       transform: translateY(-2px);
       color: var(--color-primary-dark);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+    .error-back--secondary:hover {
+      color: #ffffff;
+      box-shadow: inset 0 0 0 1px #ffffff, 0 6px 16px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
   <main class="error-page">
     <div>
-      <img src="img/aps.svg" alt="APS Filtros" class="error-logo" width="180" height="62">
+      <img src="/img/aps.svg" alt="APS Filtros" class="error-logo" width="180" height="62">
       <p class="error-code">404</p>
       <h1 class="error-title">Página não encontrada</h1>
       <p class="error-text">
         A página que você procura não existe ou foi movida. Confira o endereço
         digitado ou volte para a página inicial.
       </p>
-      <a href="/" class="error-back">Voltar para o início</a>
+      <p class="error-text error-text--secondary" lang="en">
+        The page you are looking for doesn't exist or has moved.
+      </p>
+      <div class="error-actions">
+        <a href="/" class="error-back">Voltar para o início</a>
+        <a href="/en/" class="error-back error-back--secondary" lang="en">English home page</a>
+      </div>
     </div>
   </main>
 </body>

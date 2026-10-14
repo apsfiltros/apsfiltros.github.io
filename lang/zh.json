@@ -11,7 +11,9 @@
     "lightbox_close": "关闭",
     "lightbox_prev": "上一张",
     "lightbox_next": "下一张",
-    "back_to_top": "返回顶部"
+    "back_to_top": "返回顶部",
+    "language": "语言",
+    "new_tab": "（在新标签页中打开）"
   },
   "a11y": {
     "skip_to_content": "跳到内容"

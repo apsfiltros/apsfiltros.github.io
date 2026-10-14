@@ -11,7 +11,9 @@
     "lightbox_close": "Fechar",
     "lightbox_prev": "Anterior",
     "lightbox_next": "Próxima",
-    "back_to_top": "Voltar ao topo"
+    "back_to_top": "Voltar ao topo",
+    "language": "Idioma",
+    "new_tab": "(abre em nova aba)"
   },
   "a11y": {
     "skip_to_content": "Pular para o conteúdo"

@@ -47,11 +47,36 @@
       }
     });
 
-    // Close menu on escape key
+    // Close menu on escape key, returning focus to the toggle if it was
+    // inside the menu (otherwise it would be stranded on a hidden link)
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && navMenu.classList.contains("open")) {
+        const focusWasInMenu = navMenu.contains(document.activeElement);
         navToggle.setAttribute("aria-expanded", "false");
         navMenu.classList.remove("open");
+        if (focusWasInMenu) navToggle.focus();
+      }
+    });
+  }
+
+  // ==========================================================================
+  // Language switcher (<details>) — close on outside click and Escape
+  // ==========================================================================
+
+  const langSwitcher = document.querySelector(".lang-switcher details");
+
+  if (langSwitcher) {
+    document.addEventListener("click", (e) => {
+      if (langSwitcher.open && !langSwitcher.contains(e.target)) {
+        langSwitcher.open = false;
+      }
+    });
+
+    langSwitcher.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && langSwitcher.open) {
+        e.stopPropagation();
+        langSwitcher.open = false;
+        langSwitcher.querySelector("summary").focus();
       }
     });
   }

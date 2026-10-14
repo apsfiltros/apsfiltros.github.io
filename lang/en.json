@@ -11,7 +11,9 @@
     "lightbox_close": "Close",
     "lightbox_prev": "Previous",
     "lightbox_next": "Next",
-    "back_to_top": "Back to top"
+    "back_to_top": "Back to top",
+    "language": "Language",
+    "new_tab": "(opens in a new tab)"
   },
   "a11y": {
     "skip_to_content": "Skip to content"
