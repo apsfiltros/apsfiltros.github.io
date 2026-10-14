@@ -1,0 +1,71 @@
+name: CI
+
+# Runs on every pull request, so "build" can be made a required check, and on
+# pushes to master as a safety net for anything that lands without a PR.
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write  # push regenerated pages back to the PR branch
+  statuses: write  # mark that pushed commit as built (see last step)
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # On PRs, the branch itself (not GitHub's merge preview), so a
+          # regenerated-pages commit can be pushed back to it.
+          ref: ${{ github.head_ref || github.ref }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Build pages from src/ and lang/
+        run: node build.mjs
+
+      - name: Test
+        run: npm test
+
+      - name: Validate HTML
+        run: npm run validate-html
+
+      - name: On master, fail if the committed pages were stale
+        if: github.event_name == 'push'
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::Generated pages on master don't match src/ and lang/. Run 'node build.mjs' and commit."
+            git diff --stat
+            exit 1
+          fi
+
+      - name: On pull requests, commit regenerated pages if they changed
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add index.html en/index.html es/index.html fr/index.html vi/index.html zh/index.html 404.html sitemap.xml llms.txt
+          if git diff --cached --quiet; then
+            echo "Generated pages already match the sources."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Regenerate pages from src/ and lang/"
+          git push
+          # A commit pushed with this workflow's token doesn't start a new
+          # workflow run (GitHub's loop protection), so the PR's new head commit
+          # would never get a "build" result and a required check would wait
+          # forever. This exact tree was built, tested and validated above, so
+          # report that result on it.
+          gh api "repos/${{ github.repository }}/statuses/$(git rev-parse HEAD)" \
+            -f state=success -f context=build \
+            -f description="Built, tested and validated before this commit was pushed"

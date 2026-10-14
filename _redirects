@@ -7,12 +7,12 @@
 /img/original/*  /not-found  301
 
 # The whole repo root is the deploy root, so build inputs, tooling and internal
-# docs would otherwise be public (and /template is an indexable page full of
-# {{PLACEHOLDERS}}). Remove these once Cloudflare Pages deploys a dedicated
+# docs would otherwise be public (and the page template was an indexable page full
+# of {{PLACEHOLDERS}}). Remove these once Cloudflare Pages deploys a dedicated
 # output folder instead of the repo root.
-/template  /not-found  301
-/template.html  /not-found  301
+/src/*  /not-found  301
 /lang/*  /not-found  301
+/tests/*  /not-found  301
 /.github/*  /not-found  301
 /.gitignore  /not-found  301
 /build.mjs  /not-found  301

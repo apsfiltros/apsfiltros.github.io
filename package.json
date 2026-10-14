@@ -2,8 +2,14 @@
   "name": "apsfiltros-github-io",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "node build.mjs",
+    "check": "node build.mjs --check",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "validate-html": "npx --yes html-validate@11.16.2 --config tests/htmlvalidate.json index.html en/index.html es/index.html fr/index.html vi/index.html zh/index.html 404.html",
     "optimize-images": "node optimize-images.mjs"
   },
   "devDependencies": {

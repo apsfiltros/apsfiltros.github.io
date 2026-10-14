@@ -1,0 +1,22 @@
+{
+  "brandName": "APS Filtros",
+  "legalName": "APS Manufatura e Comércio de Filtros Ltda",
+  "foundingYear": 1981,
+  "email": "aps@apsfiltros.com.br",
+  "phone": {
+    "display": "+55 (13) 3203-4377",
+    "e164": "+551332034377"
+  },
+  "whatsapp": {
+    "display": "+55 (13) 99119-1472",
+    "e164": "+5513991191472"
+  },
+  "address": {
+    "street": "Rua Contra Almirante Esculápio César de Paiva, 184",
+    "postalCode": "11088-320",
+    "city": "Santos",
+    "region": "SP",
+    "country": "BR",
+    "countryName": "Brasil"
+  }
+}
