@@ -1,6 +1,25 @@
+# Cloudflare Pages' _redirects only supports redirect codes (301/302/303/307/308),
+# not a bare 404, so each rule below redirects to a path with no matching file —
+# which resolves to a real 404 via 404.html, same as any other unmatched URL.
+
 # Archived full-resolution source photos — kept in the repo as backups,
-# never meant to be publicly served. Cloudflare Pages' _redirects only
-# supports redirect codes (301/302/303/307/308), not a bare 404, so this
-# redirects to a path with no matching route — which correctly resolves
-# to a real 404 via 404.html, same as any other unmatched URL.
-/img/original/*  /blocked-original-photo  301
+# never meant to be publicly served.
+/img/original/*  /not-found  301
+
+# The whole repo root is the deploy root, so build inputs, tooling and internal
+# docs would otherwise be public (and /template is an indexable page full of
+# {{PLACEHOLDERS}}). Remove these once Cloudflare Pages deploys a dedicated
+# output folder instead of the repo root.
+/template  /not-found  301
+/template.html  /not-found  301
+/lang/*  /not-found  301
+/.github/*  /not-found  301
+/.gitignore  /not-found  301
+/build.mjs  /not-found  301
+/optimize-images.mjs  /not-found  301
+/package.json  /not-found  301
+/package-lock.json  /not-found  301
+/README.md  /not-found  301
+/DEPLOY.md  /not-found  301
+/LICENSE  /not-found  301
+/CNAME  /not-found  301

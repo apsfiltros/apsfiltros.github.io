@@ -13,12 +13,12 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const SITE = "https://www.apsfiltros.com.br";
 
 const LANGS = [
-  { code: "pt-BR", path: "", ogLocale: "pt_BR", file: "pt-BR.json", label: "🇧🇷 Português" },
-  { code: "en", path: "en/", ogLocale: "en_US", file: "en.json", label: "🇬🇧 English" },
-  { code: "es", path: "es/", ogLocale: "es_ES", file: "es.json", label: "🇪🇸 Español" },
-  { code: "fr", path: "fr/", ogLocale: "fr_FR", file: "fr.json", label: "🇫🇷 Français" },
-  { code: "vi", path: "vi/", ogLocale: "vi_VN", file: "vi.json", label: "🇻🇳 Tiếng Việt" },
-  { code: "zh", path: "zh/", ogLocale: "zh_CN", file: "zh.json", label: "🇨🇳 中文" },
+  { code: "pt-BR", path: "", ogLocale: "pt_BR", file: "pt-BR.json", label: "Português" },
+  { code: "en", path: "en/", ogLocale: "en_US", file: "en.json", label: "English" },
+  { code: "es", path: "es/", ogLocale: "es_ES", file: "es.json", label: "Español" },
+  { code: "fr", path: "fr/", ogLocale: "fr_FR", file: "fr.json", label: "Français" },
+  { code: "vi", path: "vi/", ogLocale: "vi_VN", file: "vi.json", label: "Tiếng Việt" },
+  { code: "zh", path: "zh/", ogLocale: "zh_CN", file: "zh.json", label: "中文" },
 ];
 
 const template = readFileSync(join(ROOT, "template.html"), "utf8");
@@ -39,17 +39,24 @@ function buildHreflangLinks() {
   return links.join("\n");
 }
 
-function buildLangSwitcher(currentCode) {
+const GLOBE_ICON =
+  '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
+  '<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg>';
+
+// Native language names (not flags — flags stand for countries, and Windows
+// renders flag emojis as plain letters like "BR"). Each link declares its own
+// language so screen readers pronounce it correctly.
+function buildLangSwitcher(currentCode, languageLabel) {
   const current = LANGS.find((l) => l.code === currentCode);
   const items = LANGS.map((l) => {
     const isCurrent = l.code === currentCode;
     const attrs = isCurrent ? ' aria-current="page" class="current"' : "";
-    return `              <li><a href="/${l.path}"${attrs}>${l.label}</a></li>`;
+    return `              <li><a href="/${l.path}" lang="${l.code}" hreflang="${l.code}"${attrs}>${l.label}</a></li>`;
   }).join("\n");
 
   return `        <li class="lang-switcher">
           <details>
-            <summary aria-label="Idioma / Language">${current.label}</summary>
+            <summary>${GLOBE_ICON}<span class="sr-only">${escapeHtml(languageLabel)}: </span>${current.label}</summary>
             <ul>
 ${items}
             </ul>
@@ -89,7 +96,7 @@ function renderPage(lang, dict) {
     .split("{{OG_LOCALE}}").join(lang.ogLocale)
     .split("{{LANG_ROOT}}").join(langRoot)
     .split("{{HREFLANG_LINKS}}").join(buildHreflangLinks())
-    .split("{{LANG_SWITCHER}}").join(buildLangSwitcher(lang.code))
+    .split("{{LANG_SWITCHER}}").join(buildLangSwitcher(lang.code, ui.language || "Idioma"))
     .split("{{UI_OPEN_MENU}}").join(escapeHtml(ui.open_menu || ""))
     .split("{{UI_LIGHTBOX_LABEL}}").join(escapeHtml(ui.lightbox_label || ""))
     .split("{{UI_LIGHTBOX_CLOSE}}").join(escapeHtml(ui.lightbox_close || ""))

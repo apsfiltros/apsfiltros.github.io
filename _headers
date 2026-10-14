@@ -11,9 +11,6 @@
   Content-Type: application/manifest+json; charset=utf-8
   Cache-Control: public, max-age=604800
 
-/lang/*
-  Cache-Control: public, max-age=86400
-
 /style.css
   Cache-Control: public, max-age=86400
 

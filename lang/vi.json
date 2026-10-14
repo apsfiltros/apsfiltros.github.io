@@ -11,7 +11,9 @@
     "lightbox_close": "Đóng",
     "lightbox_prev": "Trước",
     "lightbox_next": "Tiếp theo",
-    "back_to_top": "Lên đầu trang"
+    "back_to_top": "Lên đầu trang",
+    "language": "Ngôn ngữ",
+    "new_tab": "(mở trong thẻ mới)"
   },
   "a11y": {
     "skip_to_content": "Bỏ qua để đến nội dung"
