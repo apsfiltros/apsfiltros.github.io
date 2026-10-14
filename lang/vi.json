@@ -30,12 +30,12 @@
     "contato": "Liên hệ"
   },
   "hero": {
-    "title": "APS Manufatura e Comércio de Filtros Ltda",
-    "subtitle": "Sản xuất các phần tử lọc chất lượng từ năm 1981"
+    "title": "Phần tử lọc, màng lọc và đĩa lọc Disleite",
+    "subtitle": "Dành cho chuỗi sữa, phòng thí nghiệm và ngành sơn, vecni, dầu thực vật — từ năm 1981."
   },
   "empresa": {
     "title": "Công ty",
-    "text": "APS Filtros được thành lập vào năm 1981, ban đầu hoạt động trong lĩnh vực sản xuất và thương mại các phần tử lọc \"loại màng\" cho ngành nông nghiệp (kiểm soát chế biến sữa - phòng thí nghiệm / lọc sữa / phân tích cà phê hòa tan và mật mía), sơn và vecni (trong thiết bị lọc ép / sparkler), sau đó mở rộng sang các phân khúc sản phẩm dùng một lần khác cũng như phân phối băng keo hai mặt bằng cotton."
+    "text": "APS Filtros được thành lập năm 1981 để sản xuất và kinh doanh các phần tử lọc dạng màng. Ban đầu, công ty phục vụ ngành nông nghiệp — kiểm soát chế biến sữa, phân tích phòng thí nghiệm, lọc sữa và phân tích cà phê hòa tan, mật mía — cùng ngành sơn và vecni, với các phần tử dùng cho máy lọc ép và lọc sparkler. Sau đó, công ty mở rộng sang các phân khúc sản phẩm dùng một lần khác và phân phối băng keo hai mặt bằng cotton. Công ty đặt tại Santos, bang São Paulo, Brazil."
   },
   "agricola": {
     "title": "Sản phẩm - Nông nghiệp",
@@ -53,7 +53,7 @@
     "title": "Sản phẩm - Công nghiệp",
     "subtitle": "Lọc cho ngành sơn, vecni và dầu thực vật",
     "resinas": {
-      "title": "Làm trong nhựa",
+      "title": "Làm trong nhựa resin",
       "desc": "Chuỗi công nghiệp sơn để làm trong nhựa, sử dụng trong bộ lọc loại sparkler."
     },
     "membranas": {
@@ -63,7 +63,7 @@
   },
   "fitas": {
     "title": "Băng keo hai mặt",
-    "desc": "Phân phối băng keo hai mặt cotton vàng loại \"mạnh\", nhiều kích thước theo yêu cầu với chiều dài 30,00 m cho các ứng dụng đa dạng như nối tóc."
+    "desc": "Phân phối băng keo hai mặt cotton vàng loại \"mạnh\", nhiều kích thước theo yêu cầu với chiều dài 30 m cho các ứng dụng đa dạng như nối tóc."
   },
   "contato": {
     "title": "Liên hệ",

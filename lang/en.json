@@ -30,12 +30,12 @@
     "contato": "Contact"
   },
   "hero": {
-    "title": "APS Manufatura e Comércio de Filtros Ltda",
-    "subtitle": "Manufacturing quality filter elements since 1981"
+    "title": "Filter elements, membranes and Disleite filter discs",
+    "subtitle": "For the dairy chain, laboratories and the paint, varnish and vegetable-oil industries — since 1981."
   },
   "empresa": {
     "title": "Company",
-    "text": "APS Filtros was established in 1981, initially to manufacture and market \"membrane-type\" filter elements for the agricultural sector (milk processing control - laboratory / lactofiltration / soluble coffee and sugarcane molasses analysis), paints and varnishes (in press filter / sparkler equipment), later expanding to serve other disposable product segments as well as distribution of double-sided cotton tape."
+    "text": "APS Filtros was founded in 1981 to manufacture and sell membrane-type filter elements. It started out serving agriculture — milk processing control, laboratory analysis, milk filtration testing and the analysis of soluble coffee and sugarcane molasses — and the paint and varnish industry, with elements for press and sparkler filters. It later expanded into other disposable products and the distribution of double-sided cotton tape. The company is based in Santos, São Paulo, Brazil."
   },
   "agricola": {
     "title": "Products - Agricultural",
@@ -46,7 +46,7 @@
     },
     "camisas": {
       "title": "Filter Sleeves",
-      "desc": "Sleeve-type filters, sewn. Boxes or packages with 100 pieces in various dimensions. Application: mechanical milking machines and others."
+      "desc": "Sewn sleeve-type filters. Boxes or packages with 100 pieces in various dimensions. Application: mechanical milking machines and others."
     }
   },
   "industrial": {
@@ -63,7 +63,7 @@
   },
   "fitas": {
     "title": "Double-Sided Tape",
-    "desc": "Distribution of yellow cotton double-sided \"strong\" tape, various sizes available upon request, with 30.00 m length for diverse applications such as hair extensions."
+    "desc": "Distribution of yellow cotton double-sided \"strong\" tape, various sizes available upon request, with 30 m length for diverse applications such as hair extensions."
   },
   "contato": {
     "title": "Contact",

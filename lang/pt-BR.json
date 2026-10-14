@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "APS Manufatura e Comércio de Filtros",
-    "description": "APS Filtros - Manufatura e comércio de elementos filtrantes, membranas, discos Disleite e fitas dupla face desde 1981.",
-    "og_title": "APS Manufatura e Comércio de Filtros",
+    "title": "APS Filtros — Elementos filtrantes e membranas desde 1981",
+    "description": "Elementos filtrantes, membranas e discos Disleite para a cadeia do leite, laboratórios e indústrias de tintas e óleos vegetais. Desde 1981 · Santos, SP.",
+    "og_title": "APS Filtros — Elementos filtrantes desde 1981",
     "og_description": "Elementos filtrantes, membranas, discos Disleite e fitas dupla face desde 1981. Santos, SP, Brasil."
   },
   "ui": {
@@ -30,12 +30,12 @@
     "contato": "Contato"
   },
   "hero": {
-    "title": "APS Manufatura e Comércio de Filtros Ltda",
-    "subtitle": "Desde 1981 fabricando elementos filtrantes de qualidade"
+    "title": "Elementos filtrantes, membranas e discos Disleite",
+    "subtitle": "Para a cadeia do leite, laboratórios e indústrias de tintas, vernizes e óleos vegetais — desde 1981."
   },
   "empresa": {
     "title": "Empresa",
-    "text": "A APS Filtros foi constituída em 1981, inicialmente para atuar na manufatura e comercialização de elementos filtrantes \"tipo membranas\" nos segmentos agropecuário (controle do beneficiamento do leite-laboratório / lactofiltração / análise do café solúvel e do melado do caldo da cana de açúcar), de tintas e vernizes (nos equipamentos tipo filtros prensa / sparkler), passando posteriormente a atender outros segmentos de produtos descartáveis bem como na distribuição de fitas dupla face de algodão."
+    "text": "A APS Filtros foi fundada em 1981 para fabricar e comercializar elementos filtrantes do tipo membrana. No início, atendia o setor agropecuário — controle do beneficiamento do leite, análises laboratoriais, lactofiltração e análise do café solúvel e do melado do caldo da cana-de-açúcar — e a indústria de tintas e vernizes, com elementos para filtros prensa e sparkler. Depois, passou a atender outros segmentos de produtos descartáveis e a distribuir fitas dupla face de algodão. A empresa fica em Santos, SP."
   },
   "agricola": {
     "title": "Produtos - Área Agrícola",
@@ -63,7 +63,7 @@
   },
   "fitas": {
     "title": "Fitas Dupla Face",
-    "desc": "Distribuição de fitas de algodão amarelas tipo dupla face \"forte\", medidas diversas sob consulta com 30,00 m de extensão para diversas aplicações como mega-hair."
+    "desc": "Distribuição de fitas de algodão amarelas tipo dupla face \"forte\", medidas diversas sob consulta com 30 m de extensão para diversas aplicações como mega-hair."
   },
   "contato": {
     "title": "Contato",

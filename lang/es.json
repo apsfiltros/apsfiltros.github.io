@@ -26,16 +26,16 @@
     "empresa": "Empresa",
     "agricola": "Agrícola",
     "industrial": "Industrial",
-    "fitas": "Cintas Doble Faz",
+    "fitas": "Cintas de Doble Cara",
     "contato": "Contacto"
   },
   "hero": {
-    "title": "APS Manufatura e Comércio de Filtros Ltda",
-    "subtitle": "Fabricando elementos filtrantes de calidad desde 1981"
+    "title": "Elementos filtrantes, membranas y discos filtrantes Disleite",
+    "subtitle": "Para la cadena láctea, los laboratorios y las industrias de pinturas, barnices y aceites vegetales, desde 1981."
   },
   "empresa": {
     "title": "Empresa",
-    "text": "APS Filtros fue constituida en 1981, inicialmente para actuar en la manufactura y comercialización de elementos filtrantes \"tipo membranas\" en los segmentos agropecuario (control del procesamiento de la leche - laboratorio / lactofiltración / análisis del café soluble y de la melaza de caña de azúcar), de pinturas y barnices (en equipos tipo filtros prensa / sparkler), pasando posteriormente a atender otros segmentos de productos desechables así como la distribución de cintas doble faz de algodón."
+    "text": "APS Filtros se fundó en 1981 para fabricar y comercializar elementos filtrantes de tipo membrana. Al principio atendía al sector agropecuario —control del procesamiento de la leche, análisis de laboratorio, lactofiltración y análisis del café soluble y de la melaza de caña de azúcar— y a la industria de pinturas y barnices, con elementos para filtros prensa y sparkler. Más tarde pasó a atender otros segmentos de productos desechables y a distribuir cintas de doble cara de algodón. La empresa está en Santos, São Paulo, Brasil."
   },
   "agricola": {
     "title": "Productos - Área Agrícola",
@@ -45,8 +45,8 @@
       "desc": "Discos para análisis de leche, café soluble u otros líquidos. Cajas con 100 unidades del tipo \"APS\" - marca DISLEITE - Ø=31,7 mm o 1 ¼\". Utilizados en el filtro minit (también llamado lactofiltro) para la prueba de lactofiltración, un ensayo de laboratorio que mide el sedimento insoluble — polvo, pelos y otras partículas — en la leche cruda, indicando las condiciones higiénicas del ordeño. También se emplean en análisis de café soluble, melaza de caña de azúcar y otros líquidos."
     },
     "camisas": {
-      "title": "Camisas de Filtro",
-      "desc": "Filtros tipo manga, cosidos. Cajas o paquetes con 100 piezas en diversas dimensiones. Aplicación: ordeñadoras mecánicas y otros."
+      "title": "Mangas Filtrantes",
+      "desc": "Mangas filtrantes cosidas. Cajas o paquetes con 100 piezas en diversas dimensiones. Aplicación: ordeñadoras mecánicas y otros."
     }
   },
   "industrial": {
@@ -62,8 +62,8 @@
     }
   },
   "fitas": {
-    "title": "Cintas Doble Faz",
-    "desc": "Distribución de cintas de algodón amarilla tipo doble faz \"fuerte\", medidas diversas bajo consulta con 30,00 m de extensión para diversas aplicaciones como extensiones de cabello."
+    "title": "Cintas de Doble Cara",
+    "desc": "Distribución de cintas de algodón amarillas de doble cara \"fuerte\", en diversas medidas bajo consulta, con 30 m de largo, para aplicaciones como extensiones de cabello."
   },
   "contato": {
     "title": "Contacto",

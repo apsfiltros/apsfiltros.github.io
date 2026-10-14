@@ -30,12 +30,12 @@
     "contato": "Contact"
   },
   "hero": {
-    "title": "APS Manufatura e Comércio de Filtros Ltda",
-    "subtitle": "Fabrication d'éléments filtrants de qualité depuis 1981"
+    "title": "Éléments filtrants, membranes et disques filtrants Disleite",
+    "subtitle": "Pour la filière laitière, les laboratoires et les industries des peintures, vernis et huiles végétales — depuis 1981."
   },
   "empresa": {
     "title": "Entreprise",
-    "text": "APS Filtros a été fondée en 1981, initialement pour fabriquer et commercialiser des éléments filtrants de \"type membrane\" pour le secteur agricole (contrôle du traitement du lait - laboratoire / lactofiltration / analyse du café soluble et de la mélasse de canne à sucre), des peintures et vernis (dans les équipements de filtre presse / sparkler), s'étendant par la suite à d'autres segments de produits jetables ainsi qu'à la distribution de ruban adhésif double face en coton."
+    "text": "APS Filtros a été fondée en 1981 pour fabriquer et commercialiser des éléments filtrants de type membrane. À ses débuts, elle servait le secteur agricole — contrôle du traitement du lait, analyses de laboratoire, lactofiltration et analyse du café soluble et de la mélasse de canne à sucre — ainsi que l'industrie des peintures et vernis, avec des éléments pour filtres-presses et filtres sparkler. Elle s'est ensuite ouverte à d'autres segments de produits jetables et à la distribution de ruban adhésif double face en coton. L'entreprise est située à Santos, dans l'État de São Paulo, au Brésil."
   },
   "agricola": {
     "title": "Produits - Secteur Agricole",
@@ -63,11 +63,11 @@
   },
   "fitas": {
     "title": "Ruban Double Face",
-    "desc": "Distribution de ruban double face en coton jaune de type \"fort\", dimensions diverses sur consultation avec 30,00 m de longueur pour diverses applications comme les extensions de cheveux."
+    "desc": "Distribution de ruban double face en coton jaune de type \"fort\", dimensions diverses sur consultation avec 30 m de longueur pour diverses applications comme les extensions de cheveux."
   },
   "contato": {
     "title": "Contact",
-    "email_label": "Email :",
+    "email_label": "E-mail :",
     "phone_label": "Téléphone :",
     "whatsapp_label": "WhatsApp :",
     "address_label": "Adresse :",
