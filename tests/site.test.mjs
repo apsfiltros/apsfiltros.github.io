@@ -153,6 +153,23 @@ for (const page of PAGES) {
     }
   });
 
+  test(`${page.file}: nothing the Content-Security-Policy would block`, () => {
+    const html = read(page.file);
+    // Only this site's own files (CSP: 'self'); links to wa.me etc. are fine.
+    for (const [tag] of html.matchAll(/<(?:link|script|img|source|iframe)\b[^>]*>/g)) {
+      assert.doesNotMatch(tag, /\s(?:src|srcset)="(?:https?:)?\/\//, `third-party asset: ${tag}`);
+      if (/rel="(?:stylesheet|preload|icon|apple-touch-icon|manifest)"/.test(tag)) {
+        assert.doesNotMatch(tag, /href="(?:https?:)?\/\//, `third-party asset: ${tag}`);
+      }
+    }
+    assert.doesNotMatch(html, /<style\b/, "inline <style> (blocked by style-src 'self')");
+    assert.doesNotMatch(html, /\sstyle="/, "style attribute (blocked by style-src 'self')");
+    assert.doesNotMatch(html, /\son[a-z]+="/, "inline event handler (blocked by script-src 'self')");
+    for (const [tag] of html.matchAll(/<script\b[^>]*>/g)) {
+      assert.match(tag, /\ssrc="|type="application\/ld\+json"/, `inline script: ${tag}`);
+    }
+  });
+
   test(`${page.file}: CSS and JS are versioned (they're cached for a year)`, () => {
     const html = read(page.file);
     assert.match(html, /href="\/style\.css\?v=[0-9a-f]{10}"/);
@@ -168,6 +185,21 @@ test("404.html uses absolute paths (it's served at any depth) and versioned CSS"
     assert.ok(existsSync(fileForPath(ref)), `${ref} does not exist`);
   }
   assert.match(html, /href="\/style\.css\?v=[0-9a-f]{10}"/);
+});
+
+test("every font in style.css exists, and its licence ships with it", () => {
+  const css = read("style.css");
+  const urls = [...css.matchAll(/url\("([^"]+)"\)/g)].map((m) => m[1]);
+  assert.ok(urls.length >= 5, "self-hosted @font-face rules");
+  for (const url of urls) assert.ok(existsSync(fileForPath(url)), `${url} does not exist`);
+  assert.ok(existsSync(join(ROOT, "fonts/Inter-OFL.txt")) && existsSync(join(ROOT, "fonts/DMSerifDisplay-OFL.txt")));
+});
+
+test("_headers sends a Content-Security-Policy and HSTS for every page", () => {
+  const block = read("_headers").split(/\n(?=\S)/).find((b) => b.startsWith("/*\n"));
+  assert.ok(block, "a /* rule");
+  assert.match(block, /Content-Security-Policy: default-src 'self';/);
+  assert.match(block, /Strict-Transport-Security: max-age=\d+/);
 });
 
 test("sitemap.xml lists every language page with alternates", () => {
